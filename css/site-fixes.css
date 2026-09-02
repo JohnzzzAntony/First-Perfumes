@@ -1,0 +1,313 @@
+/*=====================================
+  Site fixes — layout alignment & UI polish
+  Loaded after style.css so it wins on equal specificity.
+========================================*/
+
+/* -------------------------------------
+   1. One container system for the whole site
+   Every section — and the header logo — shares the same
+   max width and gutter, so all content lines up on one axis.
+---------------------------------------- */
+:root {
+    --site-max-width: 1600px;
+    --site-gutter: clamp(16px, 4vw, 60px);
+    /* Inner padding for the page's decorated panels (process card, counter
+       band, footer panel) so their content never sits on the panel edge. */
+    --panel-gutter: clamp(24px, 5vw, 80px);
+}
+
+.container,
+.container-fluid,
+.container.one,
+.container-fluid.one,
+.container-fluid.two {
+    width: 100%;
+    max-width: calc(var(--site-max-width) + var(--site-gutter) * 2);
+    margin-inline: auto;
+    padding-inline: var(--site-gutter);
+}
+
+/* A container nested inside another must not add a second gutter. */
+.container .container,
+.container .container-fluid,
+.container-fluid .container,
+.container-fluid .container-fluid {
+    max-width: none;
+    padding-inline: 0;
+}
+
+/* The header used a percentage gutter of its own; hand it to the container. */
+header.home3-header,
+header.header-area {
+    padding-inline: 0;
+}
+
+/* -------------------------------------
+   2. Horizontal overflow guard
+---------------------------------------- */
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* -------------------------------------
+   3. Header — split "Our Expertise" / "Manufacturing"
+---------------------------------------- */
+/* Keep the primary nav on one line. Six top-level items no longer fit at the
+   old spacing between 992px and 1400px, where the desktop menu is still used. */
+@media (min-width: 992px) {
+    header .header-area-wrap .main-menu > ul.menu-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    header .header-area-wrap .main-menu > ul.menu-list > li > a {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    header.home3-header .header-area-wrap .left-area {
+        gap: 28px;
+    }
+    header.home3-header .header-area-wrap .main-menu > ul > li > a {
+        padding: 3px 8px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    header.home3-header .header-area-wrap .left-area {
+        gap: 16px;
+    }
+    header.home3-header .header-area-wrap .main-menu > ul > li > a {
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+}
+
+/* Pin the mega menu to the site container instead of the full viewport. */
+@media (min-width: 992px) {
+    header .header-area-wrap > .container-fluid {
+        position: relative;
+    }
+    header .header-area-wrap .main-menu > ul > li .mega-menu {
+        left: var(--site-gutter);
+        right: var(--site-gutter);
+        width: auto;
+        transform: none;
+    }
+    header .header-area-wrap .main-menu > ul > li:hover .mega-menu {
+        animation: fade-down-mega 0.3s linear;
+    }
+}
+
+@keyframes fade-down-mega {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+        visibility: visible;
+    }
+}
+
+header .header-area-wrap .main-menu > ul > li .mega-menu.expertise-mega .menu-row {
+    grid-template-columns: minmax(0, 1fr) 460px;
+    gap: 60px;
+}
+
+header .header-area-wrap .main-menu > ul > li .mega-menu.expertise-mega .menu-row .service-wrap .service-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+header .header-area-wrap .main-menu > ul > li .mega-menu.expertise-mega .menu-row .industry-wrap {
+    justify-content: flex-end;
+}
+
+@media (max-width: 1399px) {
+    header .header-area-wrap .main-menu > ul > li .mega-menu.expertise-mega .menu-row {
+        grid-template-columns: minmax(0, 1fr) 415px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1199px) {
+    header .header-area-wrap .main-menu > ul > li .mega-menu.expertise-mega .menu-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+    }
+    header .header-area-wrap .main-menu > ul > li .mega-menu.expertise-mega .menu-row .service-wrap {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    header .header-area-wrap .main-menu > ul > li .mega-menu.expertise-mega .menu-row .service-wrap .service-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* -------------------------------------
+   4. About section — fill the columns
+   The feature card and the intro paragraph were capped at 460px / 536px,
+   which left a hole in the middle of the row on wide screens.
+---------------------------------------- */
+.home4-about-us-section .about-us-left-area .feature-wrap {
+    max-width: none;
+    width: 100%;
+    background: #f6f6f6;
+}
+
+/* The sketch is white line art on white, so the card stays light in dark mode. */
+body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
+    background: #ffffff;
+}
+
+.home4-about-us-section .about-us-left-area .feature-wrap > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.home4-about-us-section .about-us-right-area .section-title p {
+    max-width: none;
+}
+
+@media (min-width: 992px) {
+    .home4-about-us-section .about-us-right-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+}
+
+/* -------------------------------------
+   5. Process section — fit four steps to the screen
+   The cards were fixed at 350px min-width inside an 11% padded
+   wrapper, so step 04 was pushed outside the clipped container.
+---------------------------------------- */
+.home4-process-section .process-section-wrap {
+    --process-connector: clamp(50px, 4.5vw, 90px);
+    padding: 90px var(--panel-gutter);
+}
+
+@media (max-width: 991px) {
+    .home4-process-section .process-section-wrap {
+        padding: 70px var(--panel-gutter);
+    }
+}
+
+@media (max-width: 576px) {
+    .home4-process-section .process-section-wrap {
+        padding: 50px var(--panel-gutter);
+    }
+}
+
+/* The connector graphic *is* the gap between two cards, so the wrapper and
+   each step carry no gap of their own. */
+.home4-process-section .process-section-wrap .process-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.home4-process-section .process-section-wrap .process-wrapper .single-process {
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 0;
+}
+
+/* Steps with a connector reserve its width so every card ends up equal. */
+.home4-process-section .process-section-wrap .process-wrapper .single-process:not(.two) {
+    flex-basis: var(--process-connector, 120px);
+}
+
+.home4-process-section .process-section-wrap .process-wrapper .single-process .process-card {
+    min-width: 0;
+    max-width: none;
+    width: 100%;
+    /* Four cards share the row, so the card's own padding has to give a
+       little as the viewport narrows or the copy has nowhere to breathe. */
+    padding: clamp(28px, 2.4vw, 40px) clamp(22px, 2vw, 35px);
+}
+
+.home4-process-section .process-section-wrap .process-wrapper .single-process .animated-vector {
+    flex: 0 0 var(--process-connector, 120px);
+    min-width: var(--process-connector, 120px);
+    width: var(--process-connector, 120px);
+}
+
+/* Connectors are hidden here, so drop the reserved room and use a plain gap. */
+@media (max-width: 1399px) {
+    .home4-process-section .process-section-wrap .process-wrapper {
+        gap: 24px;
+    }
+    .home4-process-section .process-section-wrap .process-wrapper .single-process:not(.two) {
+        flex-basis: 0;
+    }
+}
+
+/* Four across stops being readable here — go two-up, then one-up. */
+@media (max-width: 1199px) {
+    .home4-process-section .process-section-wrap .process-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+    .home4-process-section .process-section-wrap .process-wrapper .single-process,
+    .home4-process-section .process-section-wrap .process-wrapper .single-process.mt-30 {
+        margin-top: 0;
+        flex-basis: auto;
+    }
+    .home4-process-section .process-section-wrap .process-wrapper .single-process .animated-vector {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .home4-process-section .process-section-wrap .process-wrapper {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+}
+
+/* -------------------------------------
+   6. Decorated panels — restore inner padding
+   These panels relied on a nested Bootstrap .container for their
+   horizontal inset. Now that the container system is unified, each
+   panel owns its own padding.
+---------------------------------------- */
+.video-and-counter-section .counter-area-wrap,
+.footer-section.home3-footer-section .footer-menu-wrap {
+    padding-inline: var(--panel-gutter);
+}
+
+/* The copyright bar sits outside the dark panel — line it up with the
+   panel's content, not its edge. */
+.footer-section .copyright-and-social-area-wrap {
+    padding-inline: var(--panel-gutter);
+}
+
+/* -------------------------------------
+   7. Footer — column rhythm
+   Four columns are too narrow for the newsletter field and the longer
+   manufacturing links on small laptops, so go two-up there.
+---------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer-section .footer-menu-wrap .row.gy-5 > [class*="col-"] {
+        width: 50%;
+    }
+}
