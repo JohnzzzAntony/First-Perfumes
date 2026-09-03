@@ -1553,4 +1553,42 @@
       });
     });
   }
+
+  // Lazy-load background video when scrolled near viewport
+  const lazyVideo = document.querySelector(".lazy-bg-video");
+  if (lazyVideo) {
+    const loadAndPlayVideo = () => {
+      const src = lazyVideo.getAttribute("data-src");
+      if (src && !lazyVideo.currentSrc) {
+        const sources = lazyVideo.querySelectorAll("source");
+        sources.forEach((s) => {
+          const dSrc = s.getAttribute("data-src");
+          if (dSrc) s.src = dSrc;
+        });
+        lazyVideo.src = src;
+        lazyVideo.load();
+      }
+      lazyVideo.play().catch(() => {});
+    };
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              loadAndPlayVideo();
+            } else if (lazyVideo.currentSrc) {
+              lazyVideo.pause();
+            }
+          });
+        },
+        { rootMargin: "400px 0px" }
+      );
+      observer.observe(lazyVideo);
+    } else {
+      // Fallback
+      loadAndPlayVideo();
+    }
+  }
 })(jQuery);
+

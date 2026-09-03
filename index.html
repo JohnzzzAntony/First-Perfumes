@@ -17,6 +17,12 @@
         <!-- Boxicon css -->
         <link rel="stylesheet" href="css/boxicons.min.css" />
         <!-- My css -->
+        <!-- Preconnect Google Fonts for performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" />
+        <!-- Preload critical hero image for fast LCP -->
+        <link rel="preload" as="image" href="images/banner-img-slide.webp" type="image/webp" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/site-fixes.css" />
         <title>First Perfumes | Premium Fragrance Manufacturer in UAE</title>
@@ -62,8 +68,8 @@
                 </div>
                 <div class="sidebar-content-wrap">
                     <div class="sidebar-logo-wrap">
-                        <a href="index.html"><img class="logo-dark" alt="First Perfumes Ind LLC" src="images/header-logo.png" /></a>
-                        <a href="index.html"><img class="logo-light" alt="First Perfumes Ind LLC" src="images/header-logo.png" /></a>
+                        <a href="index.html"><img class="logo-dark" alt="First Perfumes Ind LLC" src="images/header-logo.webp" fetchpriority="high" decoding="async"></a>
+                        <a href="index.html"><img class="logo-light" alt="First Perfumes Ind LLC" src="images/header-logo.webp" fetchpriority="high" decoding="async"></a>
                     </div>
                     
                     <div class="contact-and-social-area">
@@ -195,16 +201,16 @@ Jebel Ali - Dubai United Arab Emirates</a
                 <div class="container-fluid one d-flex flex-nowrap align-items-center justify-content-between">
                     <div class="left-area">
                         <div class="company-logo">
-                            <a href="index.html" class="logo-dark"><img alt="First Perfumes Ind LLC" src="images/header-logo.png" /></a>
-                            <a href="index.html" class="logo-light"><img alt="First Perfumes Ind LLC" src="images/header-logo.png" /></a>
+                            <a href="index.html" class="logo-dark"><img alt="First Perfumes Ind LLC" src="images/header-logo.webp" fetchpriority="high" decoding="async"></a>
+                            <a href="index.html" class="logo-light"><img alt="First Perfumes Ind LLC" src="images/header-logo.webp" fetchpriority="high" decoding="async"></a>
                         </div>
                         <div class="main-menu">
                             <div class="mobile-logo-area d-lg-none d-flex align-items-center justify-content-between">
                                 <a class="mobile-logo-wrap logo-dark" href="index.html">
-                                    <img alt="First Perfumes Ind LLC" src="images/header-logo.svg" />
+                                    <img alt="First Perfumes Ind LLC" src="images/header-logo.svg" fetchpriority="high" decoding="async">
                                 </a>
                                 <a class="mobile-logo-wrap logo-light" href="index.html">
-                                    <img alt="First Perfumes Ind LLC" src="images/footer-logo.svg" />
+                                    <img alt="First Perfumes Ind LLC" src="images/footer-logo.svg" loading="lazy" decoding="async">
                                 </a>
                                 <div class="menu-close-btn">
                                     <i class="bi bi-x"></i>
@@ -323,8 +329,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                                     ></path>
                                                                 </g>
                                                             </svg>
-                                                            Custom Fragrance <br />
-                                                            Creation
+                                                            Cosmetics &amp; <br />
+                                                            Personal Care
                                                         </a>
                                                     </li>
                                                     <li class="single-service">
@@ -372,8 +378,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                                     d="M15.0708 12.2336L15.0719 12.2342V12.2348C15.0797 12.2449 15.0909 12.2478 15.0993 12.2573C15.1396 12.3054 15.1883 12.3428 15.2424 12.3755C15.2578 12.3856 15.2691 12.4028 15.2851 12.4111C15.2899 12.4135 15.2952 12.4123 15.2994 12.4147C15.3748 12.4497 15.4573 12.4717 15.5458 12.4717H15.5464C15.6081 12.4717 15.6704 12.4616 15.731 12.442C15.7369 12.4402 15.7411 12.4361 15.7458 12.4343C15.7494 12.4331 15.7524 12.4301 15.7559 12.4289C15.7797 12.42 15.7993 12.407 15.8213 12.3951C15.848 12.3808 15.8771 12.3719 15.902 12.3529L15.9032 12.3517L17.0889 11.4587C17.3508 11.2616 17.403 10.8893 17.2059 10.6275C17.0094 10.3668 16.6383 10.3134 16.3746 10.5105L16.3349 10.5408C16.9144 8.57134 18.7354 7.12793 20.8901 7.12793C22.3299 7.12793 23.6754 7.77096 24.5832 8.89196C24.7893 9.14668 25.1633 9.18587 25.418 8.97984C25.6734 8.77321 25.7125 8.39915 25.5059 8.14502C24.3719 6.74437 22.6898 5.94043 20.8901 5.94043C18.1399 5.94043 15.8272 7.82262 15.1557 10.3645L15.1319 10.333C14.936 10.0717 14.5631 10.0165 14.3007 10.2136C14.0388 10.4102 13.9848 10.7825 14.1813 11.0449L15.0708 12.2336Z"
                                                                 ></path>
                                                             </svg>
-                                                            Packaging <br />
-                                                            Development
+                                                            Packaging &amp; <br />
+                                                            Filling
                                                         </a>
                                                     </li>
                                                     <li class="single-service">
@@ -397,8 +403,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                                     d="M10.8987 13.4474L9.62423 12.173L10.8987 10.8986L10.1126 10.1125L8.05225 12.173L10.1126 14.2335L10.8987 13.4474ZM11.6491 13.6352L12.7596 10.8575L13.7912 11.27L12.6807 14.0476L11.6491 13.6352ZM15.3452 14.2335L17.4056 12.173L15.3452 10.1125L14.5592 10.8986L15.8336 12.173L14.5592 13.4474L15.3452 14.2335Z"
                                                                 ></path>
                                                             </svg>
-                                                            Brand <br />
-                                                            Development
+                                                            Bottle &amp; <br />
+                                                            Decoration
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -460,14 +466,14 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                             </a>
                                                         </div>
                                                         <div class="people-img-list">
-                                                            <img src="images/mega-menu-people-img1.png" alt="" />
-                                                            <img src="images/mega-menu-people-img2.png" alt="" />
-                                                            <img src="images/mega-menu-people-img3.png" alt="" />
-                                                            <img src="images/mega-menu-people-img4.png" alt="" />
-                                                            <img src="images/mega-menu-people-img5.png" alt="" />
-                                                            <img src="images/mega-menu-people-img6.png" alt="" />
-                                                            <img src="images/mega-menu-people-img7.png" alt="" />
-                                                            <img src="images/mega-menu-people-img8.png" alt="" />
+                                                            <img src="images/mega-menu-people-img1.webp" alt="" loading="lazy" decoding="async">
+                                                            <img src="images/mega-menu-people-img2.webp" alt="" loading="lazy" decoding="async">
+                                                            <img src="images/mega-menu-people-img3.webp" alt="" loading="lazy" decoding="async">
+                                                            <img src="images/mega-menu-people-img4.webp" alt="" loading="lazy" decoding="async">
+                                                            <img src="images/mega-menu-people-img5.webp" alt="" loading="lazy" decoding="async">
+                                                            <img src="images/mega-menu-people-img6.webp" alt="" loading="lazy" decoding="async">
+                                                            <img src="images/mega-menu-people-img7.webp" alt="" loading="lazy" decoding="async">
+                                                            <img src="images/mega-menu-people-img8.webp" alt="" loading="lazy" decoding="async">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -646,15 +652,13 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                     height="49"
                                                     viewBox="0 0 6 49"
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path
+<path
                                                         d="M2.88672 2.83718e-05L-3.26633e-05 2.88678L2.88672 5.77353L5.77347 2.88678L2.88672 2.83718e-05ZM2.88672 48.7735L5.77347 45.8868L2.88672 43L-3.26633e-05 45.8868L2.88672 48.7735ZM2.88672 2.88678H2.38672L2.38672 45.8868H2.88672H3.38672L3.38672 2.88678H2.88672Z"
                                                     ></path>
                                                 </svg>
                                             </div>
                                             <p>
-                                                We <span>help businesses</span> reach the right audience, boost
-                                                engagement, and skyrocket conversions.
+                                                UAE's leading <span>perfume &amp; cosmetics</span> manufacturer since 2006 — delivering end-to-end fragrance development, private label production, and global compliance.
                                             </p>
                                         </div>
                                         <div class="button-area">
@@ -698,11 +702,11 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                 <div class="author-area">
                                                   
                                                     <ul class="author-img-grp">
-                                                        <li><img src="images/fda.png" alt="" /></li>
-                                                        <li><img src="images/iso.png" alt="" /></li>
-                                                        <li><img src="images/cpnp.png" alt="" /></li>
-                                                        <li><img src="images/cgmp.png" alt="" /></li>
-                                                        <li><img src="images/scpn.png" alt="" /></li>
+                                                        <li><img src="images/fda.webp" alt="" loading="lazy" decoding="async"></li>
+                                                        <li><img src="images/iso.webp" alt="" loading="lazy" decoding="async"></li>
+                                                        <li><img src="images/cpnp.webp" alt="" loading="lazy" decoding="async"></li>
+                                                        <li><img src="images/cgmp.webp" alt="" loading="lazy" decoding="async"></li>
+                                                        <li><img src="images/scpn.webp" alt="" loading="lazy" decoding="async"></li>
                                                     </ul>
                                                     
                                                 </div>
@@ -714,17 +718,17 @@ Jebel Ali - Dubai United Arab Emirates</a
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
                                                     <div class="img-area">
-                                                        <img src="images/banner-img-slide.png" alt="" />
+                                                        <img src="images/banner-img-slide.webp" alt="" fetchpriority="high" decoding="async">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="img-area">
-                                                        <img src="images/banner-img-slide2.png" alt="" />
+                                                        <img src="images/banner-img-slide2.webp" alt="" loading="lazy" decoding="async">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="img-area">
-                                                        <img src="images/banner-img-slide3.png" alt="" />
+                                                        <img src="images/banner-img-slide3.webp" alt="" loading="lazy" decoding="async">
                                                     </div>
                                                 </div>
                                             </div>
@@ -747,7 +751,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                             <div class="about-us-left-area">
                               
                                 <div class="feature-wrap">
-                                      <img src="images/sketchup.jpeg">
+                                      <img src="images/sketchup.webp" loading="lazy" decoding="async">
                                     <div class="title-area">
                                         <h3>What Sets Us Apart:</h3>
                                     </div>
@@ -782,7 +786,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                     <span>About Us</span>
                                     <h2 class="text-anim">Crafting Fragrances. Building Brands.
                                     </h2>
-                                    <p>Welcome to FirstPerfumes, where exquisite fragrances meet unmatched sophistication. Established in 2006, FirstPerfumes has emerged as a cornerstone of the perfume manufacturing landscape in the United Arab Emirates. With a dedicated focus on providing premium quality perfume manufacturing services, we have steadily built a reputation for excellence that extends far beyond our borders.</p>
+                                    <p>Founded in 2006 by visionary perfumer Mr. Abdullah Karji, First Perfumes Ind LLC has established itself as a leading name in the UAE's perfume and cosmetics manufacturing sector. In less than two decades, we have grown from a dedicated production facility into a globally recognised manufacturing unit, celebrated for precision, innovation, and craftsmanship. Whether it's creating heritage-inspired fragrances or cutting-edge modern formulations, we have always remained committed to excellence in manufacturing and innovation.</p>
                                     
                                     <a class='primary-btn1 transparent' href="#">
                                         <span>
@@ -826,14 +830,14 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         <div class="section-title home4-section-title three">
                                             <span>Process</span>
                                             <div class="left-content">
-                                                <h2 class="text-anim">From Vision to Fragrance</h2>
-                                                <p class="text-anim">Turning ideas into exceptional fragrances.</p>
+                                                <h2 class="text-anim">From Brief to Finished Product</h2>
+                                                <p class="text-anim">Our structured 8-step process ensures every product reaches market with confidence.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="right-content">
-                                            <a href="contact.html" class="view-more-btn style-2">
+                                            <a href="#footer" class="view-more-btn style-2">
                                                 <svg class="border" width="88" height="1" viewBox="0 0 88 1"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="88" height="1" />
@@ -852,9 +856,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                     <div class="step-no">
                                         <span>STEP : 01</span>
                                     </div>
-                                    <h3>Discover &
-                                        Define</h3>
-                                    <p>Understanding your vision, market, audience, and fragrance requirements.</p>
+                                    <h3>Briefing</h3>
+                                    <p>We understand your client vision, market goals, target audience, and fragrance requirements in depth.</p>
                                     <svg class="vector" width="75" height="75" viewBox="0 0 75 75" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="25" height="25" fill="#df2341" />
@@ -889,9 +892,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                     <div class="step-no">
                                         <span>STEP : 02</span>
                                     </div>
-                                    <h3>Create</h3>
-                                    <p>Developing unique fragrances, formulas, packaging concepts, and brand direction.
-                                    </p>
+                                    <h3>R&amp;D &amp; Sampling</h3>
+                                    <p>Our R&amp;D lab develops formulations, selects raw materials, and shares prototypes for client approval.</p>
                                     <svg class="vector" width="75" height="75" viewBox="0 0 75 75" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="25" height="25" fill="#a0a09f" />
@@ -927,9 +929,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                     <div class="step-no">
                                         <span>STEP : 03</span>
                                     </div>
-                                    <h3>Manufacture</h3>
-                                    <p>Transforming approved concepts into premium products through precision manufacturing and quality control.
-                                    </p>
+                                    <h3>Production &amp; Packaging</h3>
+                                    <p>Batch, fill, and assemble under strict Quality Control checks. Bottles and boxes are designed and decorated in-house.</p>
                                     <svg class="vector" width="75" height="75" viewBox="0 0 75 75" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="25" height="25" fill="#df2341" />
@@ -964,11 +965,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                     <div class="step-no">
                                         <span>STEP : 04</span>
                                     </div>
-                                    <h3>Deliver</h3>
-                                    <p>Final packaging, quality checks, and reliable delivery to support your local or global market.
-
-
-                                    </p>
+                                    <h3>Compliance &amp; Delivery</h3>
+                                    <p>Products are registered for global markets (UAE, EU, UK, USA) and shipped worldwide as finished, market-ready goods.</p>
                                     <svg class="vector" width="75" height="75" viewBox="0 0 75 75" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="25" height="25" fill="#a0a09f" />
@@ -1021,8 +1019,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                 <div class="home3-service-card">
                                     <h3><a href="#">Fragrance Development</a></h3>
                                     <p>
-                                        Build your brand presence on platforms like Facebook, Instagram, LinkedIn &amp;
-                                        TikTok.
+                                        Custom fragrance accords and formulations — from classic perfumery traditions to cutting-edge modern blends including Eau de Parfum, Eau de Toilette, and niche creations.
                                     </p>
                                     <a class="primary-btn2 transparent" href="#">
                                         <span class="icon">
@@ -1101,7 +1098,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                             >
                                 <div class="home3-service-card">
                                     <h3><a href="#">Perfume Manufacturing</a></h3>
-                                    <p>Drive instant traffic and leads through Google Ads &amp; social campaigns.</p>
+                                    <p>Automated compounding, batching, filling, and bottling systems. Flexible volumes — from small exclusive batches to full-scale mass production with consistent quality.</p>
                                     <a class="primary-btn2 transparent" href="#">
                                         <span class="icon">
                                             <svg
@@ -1176,7 +1173,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                             >
                                 <div class="home3-service-card">
                                     <h3><a href="#">Private Label Solutions</a></h3>
-                                    <p>Create valuable content that attracts, educates, and converts your audience.</p>
+                                    <p>Full-service support from fragrance development and formula creation to packaging design, compliance testing, and logistics — trusted by emerging and international brands alike.</p>
                                     <a class="primary-btn2 transparent" href="#">
                                         <span class="icon">
                                             <svg
@@ -1250,8 +1247,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                 data-ease="bounce"
                             >
                                 <div class="home3-service-card">
-                                    <h3><a href="#">Custom Fragrance Creation</a></h3>
-                                    <p>Shape your brand identity and build a strategy that stands out.</p>
+                                    <h3><a href="#">Cosmetics &amp; Personal Care</a></h3>
+                                    <p>Development and manufacturing of body lotions, creams, oils, and hair mists using safe, sustainable ingredients aligned with local and international regulatory standards.</p>
                                     <a class="primary-btn2 transparent" href="#">
                                         <span class="icon">
                                             <svg
@@ -1325,8 +1322,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                 data-ease="bounce"
                             >
                                 <div class="home3-service-card">
-                                    <h3><a href="#">Packaging Development</a></h3>
-                                    <p>Optimize your website to rank higher on Google and increase organic traffic.</p>
+                                    <h3><a href="#">Packaging &amp; Decoration</a></h3>
+                                    <p>In-house luxury goods packaging design and production. Specialized bottle coloring, lacquering, silk-screen printing, and specialty finishes ensuring market-ready brand presentation.</p>
                                     <a class="primary-btn2 transparent" href="#">
                                         <span class="icon">
                                             <svg
@@ -1406,8 +1403,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                 data-ease="bounce"
                             >
                                 <div class="home3-service-card">
-                                    <h3><a href="#">Brand Development</a></h3>
-                                    <p>Drive instant traffic and leads through Google Ads &amp; social campaigns.</p>
+                                    <h3><a href="#">Bottle &amp; Packaging Decoration</a></h3>
+                                    <p>In-house customization with lacquering, silk-screen printing, and specialty finishes — turning containers into luxury brand statements.</p>
                                     <a class="primary-btn2 transparent" href="#">
                                         <span class="icon">
                                             <svg
@@ -1500,13 +1497,13 @@ Jebel Ali - Dubai United Arab Emirates</a
                                 <span>Manufacturing Capabilities</span>
                                 <div class="left-content">
                                     <h2 class="text-anim">Advanced Fragrance Manufacturing</h2>
-                                    <p class="text-anim">Transforming ideas into memorable digital experiences.</p>
+                                    <p class="text-anim">State-of-the-art facility in Jebel Ali, Dubai designed to meet the highest global standards of production, quality control, and compliance.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="right-content">
-                                <a href="portfolio-classic.html" class="view-more-btn style-2">
+                                <a href="#" class="view-more-btn style-2">
                                     <svg class="border" width="88" height="1" viewBox="0 0 88 1"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="88" height="1" />
@@ -1524,8 +1521,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                             <div class="portfolio-content">
                                                 <div class="portfolio-content-top">
                                                     <h3><a href="#">Our Manufacturing Facility</a></h3>
-                                                    <p>Complete branding package for a sustainable e-commerce startup,
-                                                        including logo, color palette, and packaging.</p>
+                                                    <p>Located in Jebel Ali Industrial First, Dubai, our purpose-built facility integrates all key production functions under one roof for complete quality control, efficiency, and batch traceability.</p>
                                                     
                                                 </div>
                                                 <div class="portfolio-content-btm">
@@ -1545,7 +1541,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="portfolio-img">
-                                                <img src="images/home4-portfolio-img.png" alt="">
+                                                <img src="images/facility-jebel-ali.webp" alt="First Perfumes Jebel Ali Facility" loading="lazy" decoding="async">
                                             </div>
                                         </div>
                                     </div>
@@ -1555,9 +1551,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         <div class="col-lg-6">
                                             <div class="portfolio-content">
                                                 <div class="portfolio-content-top">
-                                                    <h3><a href="#">Research & Development</a></h3>
-                                                    <p>Complete branding package for a sustainable e-commerce startup,
-                                                        including logo, color palette, and packaging.</p>
+                                                    <h3><a href="#">Research & Development (R&D)</a></h3>
+                                                    <p>Dedicated R&D laboratory creating unique fragrance accords, cosmetic formulations, exploring sustainable natural extracts, and conducting stability and compatibility tests for global regulatory compliance.</p>
                                                     
                                                 </div>
                                                 <div class="portfolio-content-btm">
@@ -1577,7 +1572,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="portfolio-img">
-                                                <img src="images/home4-portfolio-img2.png" alt="">
+                                                <img src="images/rnd-lab.webp" alt="First Perfumes R&D Laboratory" loading="lazy" decoding="async">
                                             </div>
                                         </div>
                                     </div>
@@ -1587,9 +1582,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         <div class="col-lg-6">
                                             <div class="portfolio-content">
                                                 <div class="portfolio-content-top">
-                                                    <h3><a href="#">Fragrance Creation</a></h3>
-                                                    <p>Complete branding package for a sustainable e-commerce startup,
-                                                        including logo, color palette, and packaging.</p>
+                                                    <h3><a href="#">Fragrance Compounding & Batching</a></h3>
+                                                    <p>Precision compounding and automated batching for Eau de Parfum, Eau de Toilette, and niche blends — from small exclusive batches to full mass production.</p>
                                                     
                                                 </div>
                                                 <div class="portfolio-content-btm">
@@ -1609,7 +1603,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="portfolio-img">
-                                                <img src="images/home4-portfolio-img3.png" alt="">
+                                                <img src="images/perfume-compounding.webp" alt="Perfume Compounding & Batching" loading="lazy" decoding="async">
                                             </div>
                                         </div>
                                     </div>
@@ -1619,9 +1613,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         <div class="col-lg-6">
                                             <div class="portfolio-content">
                                                 <div class="portfolio-content-top">
-                                                    <h3><a href="#">Production Process</a></h3>
-                                                    <p>Complete branding package for a sustainable e-commerce startup,
-                                                        including logo, color palette, and packaging.</p>
+                                                    <h3><a href="#">Dedicated Cosmetics Unit</a></h3>
+                                                    <p>Specialized cleanroom lines for luxury creams, body lotions, hair mists, and personal care products formulated with ethically sourced, safe ingredients.</p>
                                                     
                                                 </div>
                                                 <div class="portfolio-content-btm">
@@ -1641,7 +1634,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="portfolio-img">
-                                                <img src="images/home4-portfolio-img4.png" alt="">
+                                                <img src="images/cosmetics-care.webp" alt="Cosmetics and Personal Care Unit" loading="lazy" decoding="async">
                                             </div>
                                         </div>
                                     </div>
@@ -1651,9 +1644,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         <div class="col-lg-6">
                                             <div class="portfolio-content">
                                                 <div class="portfolio-content-top">
-                                                    <h3><a href="#">Quality Control</a></h3>
-                                                    <p>Complete branding package for a sustainable e-commerce startup,
-                                                        including logo, color palette, and packaging.</p>
+                                                    <h3><a href="#">Quality Control Laboratories</a></h3>
+                                                    <p>Comprehensive analytical testing of raw materials, formulation stability, and finished products adhering to ISO 22716:2007 (Cosmetics GMP) and US FDA registered standards.</p>
                                                     
                                                 </div>
                                                 <div class="portfolio-content-btm">
@@ -1673,7 +1665,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="portfolio-img">
-                                                <img src="images/home4-portfolio-img3.png" alt="">
+                                                <img src="images/quality-lab.webp" alt="Quality Control Laboratory" loading="lazy" decoding="async">
                                             </div>
                                         </div>
                                     </div>
@@ -1683,9 +1675,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         <div class="col-lg-6">
                                             <div class="portfolio-content">
                                                 <div class="portfolio-content-top">
-                                                    <h3><a href="#">Packaging & Filling</a></h3>
-                                                    <p>Complete branding package for a sustainable e-commerce startup,
-                                                        including logo, color palette, and packaging.</p>
+                                                    <h3><a href="#">Bottle Coloring & Luxury Decoration</a></h3>
+                                                    <p>Specialized in-house section providing precision bottle lacquering, multi-color silk-screen printing, hot foil stamping, and custom decorative finishes.</p>
                                                     
                                                 </div>
                                                 <div class="portfolio-content-btm">
@@ -1705,7 +1696,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="portfolio-img">
-                                                <img src="images/home4-portfolio-img3.png" alt="">
+                                                <img src="images/bottle-decor.webp" alt="Bottle Coloring & Decoration" loading="lazy" decoding="async">
                                             </div>
                                         </div>
                                     </div>
@@ -1715,9 +1706,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         <div class="col-lg-6">
                                             <div class="portfolio-content">
                                                 <div class="portfolio-content-top">
-                                                    <h3><a href="#">Capabilities</a></h3>
-                                                    <p>Complete branding package for a sustainable e-commerce startup,
-                                                        including logo, color palette, and packaging.</p>
+                                                    <h3><a href="#">Packaging & Sustainable Assembly</a></h3>
+                                                    <p>End-to-end luxury packaging design and assembly adhering to sustainability measures — energy-efficient equipment, recyclable materials, and waste minimization protocols.</p>
                                                     
                                                 </div>
                                                 <div class="portfolio-content-btm">
@@ -1737,7 +1727,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="portfolio-img">
-                                                <img src="images/home4-portfolio-img3.png" alt="">
+                                                <img src="images/packaging-unit.webp" alt="Packaging & Sustainable Assembly" loading="lazy" decoding="async">
                                             </div>
                                         </div>
                                     </div>
@@ -1757,8 +1747,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="video-area">
-                                    <video autoplay="" loop="loop" muted="" preload="auto">
-                                        <source src="media/First Perfumes LLC - Best Manufacturing Company.mp4" type="video/mp4" />
+                                    <video loop="loop" muted="muted" playsinline="playsinline" preload="none" poster="media/video-poster.webp" class="lazy-bg-video" data-src="media/first-perfumes-web.mp4">
+                                        <source data-src="media/first-perfumes-web.mp4" type="video/mp4" />
                                     </video>
                                 </div>
                                 <div class="counter-area-wrap">
@@ -1768,15 +1758,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                 <div class="counter-content">
                                                     <div class="left-content">
                                                         <p>
-                                                            We’re a passionate team of
-                                                            <span
-                                                                >marketers, strategists, and creatives helping
-                                                                brands</span
-                                                            >
-                                                            grow online with data-driven solutions and innovative
-                                                            campaigns. <span>Our mission</span> is to turn ideas into
-                                                            impactful results through clear strategies and measurable
-                                                            success.
+                                                            For nearly two decades, First Perfumes Ind LLC has been at the core of the <span>UAE's fragrance and cosmetics manufacturing</span> industry. With a balance of heritage, innovation, and sustainability, we continue to deliver excellence for partners who trust us with their brands. <span>"At First Perfumes, we don't just manufacture fragrances — we craft legacies with precision, responsibility, and artistry."</span>
                                                         </p>
                                                     </div>
                                                     <div class="right-content">
@@ -1876,11 +1858,11 @@ Jebel Ali - Dubai United Arab Emirates</a
                         <div class="col-lg-12 mb-60">
                             <div class="section-title three">
                                 <div class="left-content">
-                                    <span>Products & Solutions</span>
+                                    <span>Products &amp; Solutions</span>
                                     <h2 class="text-anim">Premium Fragrance Solutions, Crafted for Your Brand</h2>
                                 </div>
                                 <div class="right-content">
-                                    <p>Bringing smart solutions to multiple sectors worldwide</p>
+                                    <p>Manufacturing excellence across fine fragrances, personal care, and cosmetics</p>
                                     <a href="#" class="view-more-btn">View More
                                         <svg class="arrow" width="20" height="20" viewBox="0 0 20 20"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1902,7 +1884,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         <ul>
                                             <li class="active">
                                                 <div class="single-img">
-                                                    <img src="images/our-work-img.png" alt="">
+                                                    <img src="images/our-work-img.webp" alt="" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="counter-wrap">
                                                     <div class="counter-content">
@@ -1922,7 +1904,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                             </li>
                                             <li>
                                                 <div class="single-img">
-                                                    <img src="images/our-work-img2.png" alt="">
+                                                    <img src="images/our-work-img2.webp" alt="" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="counter-wrap">
                                                     <div class="counter-content">
@@ -1942,7 +1924,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                             </li>
                                             <li>
                                                 <div class="single-img">
-                                                    <img src="images/our-work-img3.png" alt="">
+                                                    <img src="images/our-work-img3.webp" alt="" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="counter-wrap">
                                                     <div class="counter-content">
@@ -1962,7 +1944,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                             </li>
                                             <li>
                                                 <div class="single-img">
-                                                    <img src="images/our-work-img4.png" alt="">
+                                                    <img src="images/our-work-img4.webp" alt="" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="counter-wrap">
                                                     <div class="counter-content">
@@ -1982,7 +1964,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                             </li>
                                             <li>
                                                 <div class="single-img">
-                                                    <img src="images/our-work-img5.png" alt="">
+                                                    <img src="images/our-work-img5.webp" alt="" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="counter-wrap">
                                                     <div class="counter-content">
@@ -2002,7 +1984,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                             </li>
                                             <li>
                                                 <div class="single-img">
-                                                    <img src="images/our-work-img6.png" alt="">
+                                                    <img src="images/our-work-img6.webp" alt="" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="counter-wrap">
                                                     <div class="counter-content">
@@ -2028,46 +2010,31 @@ Jebel Ali - Dubai United Arab Emirates</a
                                         <div class="col-xxl-8 col-lg-7">
                                             <div class="our-work-list">
                                                 <ul>
-                                                    <li class="active fade_anim" data-delay=".2" data-fade-from="top">
-                                                        <h2><a href="#">Fine Fragrances </a></h2>
-                                                        <div class="our-work-content">
-                                                            <p>Establish a consistent and trustworthy brand identity for
-                                                                <strong>Hospitals, Clinics, & Healthcare
-                                                                    companies.</strong>
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="fade_anim" data-delay=".2" data-fade-from="top">
-                                                        <h2><a href="#">Oriental Fragrances</a>
-                                                        </h2>
-                                                        <div class="our-work-content">
-                                                            <p>Establish a consistent and trustworthy brand identity for
-                                                                <strong>Hospitals, Clinics, & Healthcare
-                                                                    companies.</strong>
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="fade_anim" data-delay=".3" data-fade-from="top">
-                                                        <h2><a href="#">Home & Lifestyle</a></h2>
-                                                        <div class="our-work-content">
-                                                            <p>Establish a consistent and trustworthy brand identity for
-                                                                <strong>Hospitals, Clinics, & Healthcare
-                                                                    companies.</strong>
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="fade_anim" data-delay=".4" data-fade-from="top">
-                                                        <h2><a href="#">Private Label</a>
-                                                        </h2>
-                                                        <div class="our-work-content">
-                                                            <p>Establish a consistent and trustworthy brand identity for
-                                                                <strong>Hospitals, Clinics, & Healthcare
-                                                                    companies.</strong>
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                                    
-                                                </ul>
+                                                     <li class="active fade_anim" data-delay=".2" data-fade-from="top">
+                                                         <h2><a href="#">Fine Fragrances</a></h2>
+                                                         <div class="our-work-content">
+                                                             <p>Eau de Parfum, Eau de Toilette &amp; niche blends crafted through <strong>expert compounding and batching</strong>, combining classic perfumery traditions with modern creative innovations.</p>
+                                                         </div>
+                                                     </li>
+                                                     <li class="fade_anim" data-delay=".2" data-fade-from="top">
+                                                         <h2><a href="#">Oriental Fragrances</a></h2>
+                                                         <div class="our-work-content">
+                                                             <p>Heritage-inspired oriental blends leveraging deep expertise in <strong>traditional Arabian oud, musk, and amber</strong> profiles — produced with precision filling and decoration systems.</p>
+                                                         </div>
+                                                     </li>
+                                                     <li class="fade_anim" data-delay=".3" data-fade-from="top">
+                                                         <h2><a href="#">Body &amp; Personal Care</a></h2>
+                                                         <div class="our-work-content">
+                                                             <p>Body lotions, creams, oils, and hair mists developed with <strong>safe, sustainable ingredients</strong> and innovative raw materials, compliant with international safety standards.</p>
+                                                         </div>
+                                                     </li>
+                                                     <li class="fade_anim" data-delay=".4" data-fade-from="top">
+                                                         <h2><a href="#">Private Label &amp; Contract</a></h2>
+                                                         <div class="our-work-content">
+                                                             <p>Comprehensive private label solutions guiding brands <strong>from concept to market launch</strong> — formula creation, compliance testing, packaging design, and global logistics support.</p>
+                                                         </div>
+                                                     </li>
+                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 d-lg-block d-none">
@@ -2075,38 +2042,38 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                 <ul>
                                                     <li class="active">
                                                         <div class="single-img">
-                                                            <img src="images/our-work-right-img1.png"
-                                                                alt="">
+                                                            <img src="images/our-work-right-img1.webp"
+                                                                alt="" loading="lazy" decoding="async">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="single-img">
-                                                            <img src="images/our-work-right-img2.png"
-                                                                alt="">
+                                                            <img src="images/our-work-right-img2.webp"
+                                                                alt="" loading="lazy" decoding="async">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="single-img">
-                                                            <img src="images/our-work-right-img3.png"
-                                                                alt="">
+                                                            <img src="images/our-work-right-img3.webp"
+                                                                alt="" loading="lazy" decoding="async">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="single-img">
-                                                            <img src="images/our-work-right-img4.png"
-                                                                alt="">
+                                                            <img src="images/our-work-right-img4.webp"
+                                                                alt="" loading="lazy" decoding="async">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="single-img">
-                                                            <img src="images/our-work-right-img5.png"
-                                                                alt="">
+                                                            <img src="images/our-work-right-img5.webp"
+                                                                alt="" loading="lazy" decoding="async">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="single-img">
-                                                            <img src="images/our-work-right-img6.png"
-                                                                alt="">
+                                                            <img src="images/our-work-right-img6.webp"
+                                                                alt="" loading="lazy" decoding="async">
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -2128,8 +2095,8 @@ Jebel Ali - Dubai United Arab Emirates</a
                         <div class="row gy-3 mb-60 justify-content-between">
                             <div class="col-lg-7">
                                 <div class="section-title home3-section-title three">
-                                    <span>Article</span>
-                                    <h2 class="text-anim">Insights &amp; Trends In The World</h2>
+                                    <span>Industry Insights</span>
+                                    <h2 class="text-anim">Insights &amp; Trends In Fragrance</h2>
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -2161,7 +2128,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                 data-speedin="1"
                                                 data-speedout="1"
                                             >
-                                                <img src="images/blog-img.png" alt="" />
+                                                <img src="images/blog-img.webp" alt="" loading="lazy" decoding="async">
                                             </div>
                                         </a>
                                         <div class="icon">
@@ -2181,7 +2148,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                     </div>
                                     <div class="blog-content">
                                         <ul class="blog-meta">
-                                            <li><a href="#">Social Media</a></li>
+                                            <li><a href="#">Sustainability</a></li>
                                             <li>
                                                 <svg
                                                     width="37"
@@ -2191,14 +2158,15 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                 >
                                                     <path
                                                         d="M32 3.38672L37 5.77347L37 -3.26633e-05L32 2.38672L32 3.38672ZM5 2.38672L2.18264e-07 -3.54609e-05L-2.18264e-07 5.77347L5 3.38672L5 2.38672ZM32.5 2.88672L32.5 2.38672L4.5 2.38672L4.5 2.88672L4.5 3.38672L32.5 3.38672L32.5 2.88672Z"
-                                                    ></path>
+                                                    >
+                                                    </path>
                                                 </svg>
                                             </li>
-                                            <li><a href="#">14 August, 2026</a></li>
+                                            <li><a href="#">September, 2026</a></li>
                                         </ul>
                                         <h3>
                                             <a href="#"
-                                                >The Future of Social Media Marketing in 2026
+                                                >Eco-Friendly Sourcing: The Future of Responsible Fragrance Manufacturing
                                             </a>
                                         </h3>
                                         <a class="primary-btn2 transparent" href="#">
@@ -2248,7 +2216,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                 data-speedin="1"
                                                 data-speedout="1"
                                             >
-                                                <img src="images/blog-img2.png" alt="" />
+                                                <img src="images/blog-img2.webp" alt="" loading="lazy" decoding="async">
                                             </div>
                                         </a>
                                         <div class="icon">
@@ -2268,7 +2236,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                     </div>
                                     <div class="blog-content">
                                         <ul class="blog-meta">
-                                            <li><a href="#">SEO Strategy</a></li>
+                                            <li><a href="#">Global Compliance</a></li>
                                             <li>
                                                 <svg
                                                     width="37"
@@ -2281,11 +2249,11 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                     ></path>
                                                 </svg>
                                             </li>
-                                            <li><a href="#">14 August, 2026</a></li>
+                                            <li><a href="#">September, 2026</a></li>
                                         </ul>
                                         <h3>
                                             <a href="#"
-                                                >SEO Hacks to Skyrocket Your Website Traffic
+                                                >Navigating International Standards: US FDA, ISO 22716, EU CPNP &amp; UK SCPN
                                             </a>
                                         </h3>
                                         <a class="primary-btn2 transparent" href="#">
@@ -2335,7 +2303,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                 data-speedin="1"
                                                 data-speedout="1"
                                             >
-                                                <img src="images/blog-img3.png" alt="" />
+                                                <img src="images/blog-img3.webp" alt="" loading="lazy" decoding="async">
                                             </div>
                                         </a>
                                         <div class="icon">
@@ -2355,7 +2323,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                     </div>
                                     <div class="blog-content">
                                         <ul class="blog-meta">
-                                            <li><a href="#">Paid Marketing</a></li>
+                                            <li><a href="#">Private Label</a></li>
                                             <li>
                                                 <svg
                                                     width="37"
@@ -2368,11 +2336,11 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                     ></path>
                                                 </svg>
                                             </li>
-                                            <li><a href="#">14 August, 2026</a></li>
+                                            <li><a href="#">September, 2026</a></li>
                                         </ul>
                                         <h3>
                                             <a href="#"
-                                                >Mastering Paid Ads: A Complete Guide for Startups
+                                                >From Concept to Global Market: Launching a Turnkey Fragrance Line in the UAE
                                             </a>
                                         </h3>
                                         <a class="primary-btn2 transparent" href="#">
@@ -2417,7 +2385,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                 <!-- Blog section End-->
 
                 <!-- home1 Footer Section Start -->
-                <footer class="footer-section home3-footer-section">
+                <footer id="footer" class="footer-section home3-footer-section">
                     <div class="container-fluid one">
                         <div class="row">
                             <div class="col-lg-12">
@@ -2539,7 +2507,7 @@ Jebel Ali - Dubai United Arab Emirates</a
                                                         </div>
                                                     </form>
                                                     <a
-                                                        href="media/First Perfumes Ind LLC – Company Profile - 01.pdf"
+                                                        href="media/First Perfumes Ind.pdf"
                                                         class="file-download-btn"
                                                         download=""
                                                     >

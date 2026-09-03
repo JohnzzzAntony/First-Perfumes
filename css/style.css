@@ -2,7 +2,7 @@
 /*===========================
  01.COMMON CSS 
 ===========================*/
-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+/* Fonts loaded via preconnect in index.html for non-blocking render */
 :root {
   --font-inter: "Inter", sans-serif;
   --font-spaceGrotesk: "Space Grotesk", sans-serif;
@@ -3318,7 +3318,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 ========================================*/
 .home1-banner-section {
   padding: 145px 187px 0 187px;
-  background-image: url(../images/banner-bg.png);
+  background-image: url(../images/banner-bg.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3477,8 +3477,8 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   text-align: center;
 }
 .home1-banner-section .banner-wrapper .banner-img-wrap .banner-img {
-  -webkit-mask-image: url(../images/banner-image-mask.png);
-          mask-image: url(../images/banner-image-mask.png);
+  -webkit-mask-image: url(../images/banner-image-mask.webp);
+          mask-image: url(../images/banner-image-mask.webp);
   -webkit-mask-size: cover;
           mask-size: cover;
   -webkit-mask-repeat: no-repeat;
@@ -3529,7 +3529,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 .home1-banner-section .banner-wrapper .banner-img-wrap .counter-wrap .counter-area {
   padding: 26px 30px;
-  background-image: url(../images/counter-area-bg.png);
+  background-image: url(../images/counter-area-bg.webp);
   background-size: cover;
   border-radius: 12px;
   min-width: 204px;
@@ -3643,7 +3643,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   left: unset;
   bottom: 0;
   right: 0;
-  background-image: url(../images/counter-area-bg2.png);
+  background-image: url(../images/counter-area-bg2.webp);
   background-size: cover;
   min-height: 188px;
 }
@@ -4454,7 +4454,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   animation: fade-down 0.45s linear;
 }
 .home1-our-work-section.innerpage-work-section {
-  background-image: url(../images/innerpage-our-work-bg.png);
+  background-image: url(../images/innerpage-our-work-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6549,7 +6549,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   15. Banner card section CSS
 ========================================*/
 .banner-card-section .banner-card {
-  background-image: url(../images/banner-card-bg.png);
+  background-image: url(../images/banner-card-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6619,7 +6619,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .banner-card-section.inner-banner-card .banner-card {
-  background-image: url(../images/service-inner-banner-card-bg.png);
+  background-image: url(../images/service-inner-banner-card-bg.webp);
 }
 
 /*=====================================
@@ -6987,7 +6987,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   17. Home1 Footer Section CSS
 ========================================*/
 .footer-section {
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/footer-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -7472,7 +7472,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   color: var(--primary-color3);
 }
 .footer-section.home2-footer-section {
-  background-image: url(../images/footer-bg_1.png);
+  background-image: url(../images/footer-bg_1.webp);
 }
 .footer-section.home2-footer-section .footer-contact-wrap {
   position: relative;
@@ -10087,7 +10087,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   23. Home2 Footer top section CSS
 ========================================*/
 .home2-footer-top-section {
-  background-image: url(../images/footer-top-bg.png);
+  background-image: url(../images/footer-top-bg.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10318,7 +10318,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .home3-banner-section .banner-wrapper {
-  background-image: url(../images/banner-bg_1.png);
+  background-image: url(../images/banner-bg_1.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10735,7 +10735,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 .home3-banner-section .banner-wrapper .banner-img-wrap .counter-wrap .counter-area {
   padding: 26px 30px;
-  background-image: url(../images/project-completed.png);
+  background-image: url(../images/project-completed.webp);
   backdrop-filter: blur(20px);
   border-radius: 12px 0px 0px 0px;
   min-width: 178px;
@@ -10808,7 +10808,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .home3-banner-section .banner-wrapper .banner-img-wrap .counter-wrap .counter-area.two {
-  background-image: url(../images/customer-satisfaction.png);
+  background-image: url(../images/customer-satisfaction.webp);
   height: 217px;
   backdrop-filter: blur(20px);
   border-radius: 12px 12px 0px 0px;
@@ -11619,7 +11619,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   30. Home3 Team section  CSS
 ========================================*/
 .home3-team-section .team-section-wrapper {
-  background-image: url(../images/team-area-bg.png);
+  background-image: url(../images/team-area-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15344,7 +15344,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   47. Home3 portfolio section CSS
 ========================================*/
 .home3-portfolio-section .portfolio-wrapper {
-  background-image: url(../images/project-area-bg.png);
+  background-image: url(../images/project-area-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18984,7 +18984,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   color: var(--title-color);
 }
 .portfolio-details-page .portfolio-details-banner {
-  background-image: url(../images/portfolio-details-banner-card.png);
+  background-image: url(../images/portfolio-details-banner-card.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19195,7 +19195,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 .home5-banner-section .banner-content-wrapper {
   padding: 175px 187px 0 187px;
-  background-image: url(../images/banner-bg_3.png);
+  background-image: url(../images/banner-bg_3.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20349,7 +20349,7 @@ body.dark header.home4-header .header-area-wrap .main-menu > ul > li ul.sub-menu
   color: var(--white-color);
 }
 body.dark .home1-banner-section {
-  background-image: url(../images/banner-bg-dark.png);
+  background-image: url(../images/banner-bg-dark.webp);
 }
 body.dark .home1-banner-section .banner-wrapper .banner-content .button-area .rating-area .review .light-logo {
   display: none;
@@ -20483,7 +20483,7 @@ body.dark .partner-section .partner-wrap::before {
   display: none;
 }
 body.dark .banner-card-section .banner-card {
-  background-image: url(../images/banner-card-bg-dark.png);
+  background-image: url(../images/banner-card-bg-dark.webp);
 }
 body.dark .case-study-section {
   background-color: #212121;
@@ -20544,7 +20544,7 @@ body.dark .form-inner textarea {
   background: #2c2c2c;
 }
 body.dark .footer-section {
-  background-image: url(../images/footer-bg-dark.png);
+  background-image: url(../images/footer-bg-dark.webp);
 }
 body.dark .footer-section .footer-menu-wrap .contact-list .single-contact .icon {
   background: #212121;
@@ -20573,7 +20573,7 @@ body.dark .footer-section .social-list li a:hover {
   color: var(--dark-title-color);
 }
 body.dark .footer-section.home2-footer-section {
-  background-image: url(../images/footer-bg_1.png);
+  background-image: url(../images/footer-bg_1.webp);
 }
 body.dark .footer-section.home3-footer-section {
   background-image: unset;
@@ -20737,7 +20737,7 @@ body.dark .team-card.style-2 .team-content {
   background-color: unset;
 }
 body.dark .home4-banner-section {
-  background: url(../images/banner-bg-dark.png);
+  background: url(../images/banner-bg-dark.webp);
 }
 body.dark .home4-banner-section .banner-wrapper .button-area .rating-area .review .light-logo {
   display: none;
@@ -21162,7 +21162,7 @@ body.dark .industries-details-page .industries-details-content-wrap .tag-navigat
   color: var(--white-color);
 }
 body.dark .home5-banner-section .banner-content-wrapper {
-  background-image: url(../images/banner-bg-dark_1.png);
+  background-image: url(../images/banner-bg-dark_1.webp);
 }
 body.dark .home5-banner-section .banner-content-wrapper .banner-content .button-area .primary-btn1.transparent {
   border: 1px solid var(--white-color);
