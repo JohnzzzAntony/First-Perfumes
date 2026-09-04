@@ -310,3 +310,44 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
         width: 50%;
     }
 }
+
+/* -------------------------------------
+   8. Manufacturing capabilities — stacked cards
+   Every card pins to the same offset and scales down into a stack, so a card
+   that is taller than the one covering it leaves its bottom row — the
+   "View Details" link — sticking out from under the stack. Card height came
+   from the copy, which differs per card, so several bled through at once.
+   Give every card one height and let the photo take up the slack.
+---------------------------------------- */
+
+/* The Bootstrap row inside the card carried the default -12px gutter margin,
+   so the photo hung 12px past the card's rounded border. */
+.home4-portfolio-section .porfolio-card-wrapper .portfolioCard {
+    overflow: hidden;
+}
+
+.home4-portfolio-section .porfolio-card-wrapper .portfolioCard > .row {
+    --bs-gutter-x: 0;
+    height: 100%;
+}
+
+/* Full-bleed crop instead of a stretched image. */
+.home4-portfolio-section .porfolio-card-wrapper .portfolioCard .portfolio-img img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    /* Comfortably above the tallest card's copy at every desktop width
+       (381px at 992px, 379px at 1280px), so no card outgrows the stack. */
+    .home4-portfolio-section .porfolio-card-wrapper .portfolioCard {
+        height: clamp(420px, 30vw, 480px);
+    }
+
+    /* With a fixed height, space-between would strand the link at the bottom
+       of a half-empty column — centre the block against the photo instead. */
+    .home4-portfolio-section .porfolio-card-wrapper .portfolioCard .portfolio-content {
+        justify-content: center;
+    }
+}

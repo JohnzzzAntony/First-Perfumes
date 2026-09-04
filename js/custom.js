@@ -1,13 +1,6 @@
 (function ($) {
   "use strict";
 
-  const params = new URLSearchParams(window.location.search);
-  const mode = params.get("mode");
-  if( mode == 'dark' ) {
-    $('body').addClass('dark');
-  }
-  
-
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   let smoother = ScrollSmoother.create({
     wrapper: "#smooth-wrapper", // should wrap the whole page
@@ -464,46 +457,6 @@
 		  $(".language-list").removeClass("active");
 		}
 	});
-
-  // Dark Light
-  const dayNight = document.querySelector(".tt-style-switch");
-  const body = document.body;
-  const icon = dayNight.querySelector("i");
-
-  const toggleDarkMode = () => {
-    body.classList.toggle("dark");
-
-    icon.classList.toggle(
-      "bi-brightness-low-fill",
-      body.classList.contains("dark"),
-    );
-    icon.classList.toggle("bi-moon", !body.classList.contains("dark"));
-
-    localStorage.setItem(
-      "softro_theme",
-      body.classList.contains("dark") ? "dark" : "",
-    );
-  };
-
-  dayNight.addEventListener("click", toggleDarkMode);
-
-  window.addEventListener("load", () => {
-    const savedTheme = localStorage.getItem("softro_theme");
-    if (savedTheme === "dark") {
-      toggleDarkMode();
-    }
-  });
-
-  setTimeout(() => {
-    const darkClassExists = body.classList.contains('dark');
-    if( darkClassExists ) {
-      icon.classList.add("bi-brightness-low-fill");
-      icon.classList.remove("bi-moon");
-    }else{
-      icon.classList.remove("bi-brightness-low-fill");
-      icon.classList.add("bi-moon");
-    }
-  }, 500);
 
   // Text Effect Animation
   if ($(".text-anim").length) {
