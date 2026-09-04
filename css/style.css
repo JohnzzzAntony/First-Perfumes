@@ -22,7 +22,7 @@
   --text-color-opc: 82, 82, 82;
   --primary-color1: #de2341;
   --primary-color1-opc: 200, 248, 169;
-  --primary-color2: #0f3d3a;
+  --primary-color2: #de2342;
   --primary-color2-opc: 15, 61, 58;
   --borders-color: #eeeeee;
   --borders-color-opc: 238, 238, 238;
@@ -823,8 +823,8 @@ body.tt-magic-cursor #magic-cursor {
 .section-title p {
   color: var(--text-color);
   font-family: var(--font-inter);
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.5;
   margin-bottom: 0;
   max-width: 536px;
@@ -1637,7 +1637,7 @@ body.tt-magic-cursor #magic-cursor {
 .right-sidebar-menu .right-sidebar-close-btn i {
   font-size: 28px;
   line-height: 1;
-  color: #0f3d3a;
+  color: #de2342;
   transition: 0.35s;
 }
 @media (max-width: 576px) {
@@ -2720,7 +2720,7 @@ header .header-area-wrap .main-menu > ul > li .mega-menu .menu-row .industry-wra
   transform: rotate(45deg);
 }
 header .header-area-wrap .main-menu > ul > li .mega-menu .menu-row .industry-wrap .support-wrap {
-  background-image: url(../images/mega-menu-support-area-bg.png), linear-gradient(180deg, #0f3d3a 0%, #192726 100%);
+  background-image: url(../images/mega-menu-support-area-bg.png), linear-gradient(180deg, #de2342 0%, #192726 100%);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -5529,7 +5529,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   11. our service section CSS
 ========================================*/
 .our-service-section {
-  background: linear-gradient(180deg, #0f3d3a 0%, #212121 127.82%);
+  background: linear-gradient(180deg, #de2342 0%, #212121 127.82%);
   padding: 90px 0;
   position: relative;
   z-index: 1;
@@ -6626,7 +6626,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   16.  Case study section CSS
 ========================================*/
 .case-study-section {
-  background: linear-gradient(180deg, #0f3d3a 0%, #212121 127.82%);
+  background: linear-gradient(180deg, #de2342 0%, #212121 127.82%);
   padding: 90px 0;
 }
 @media (max-width: 767px) {
@@ -9301,7 +9301,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   20. Home2 portfolio Section CSS
 ========================================*/
 .home2-portfolio-section {
-  background: linear-gradient(180deg, #0f3d3a 0%, #212121 127.82%);
+  background: linear-gradient(180deg, #de2342 0%, #212121 127.82%);
   padding: 100px 0 120px;
 }
 @media (max-width: 1199px) {
@@ -10447,8 +10447,9 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 @media (max-width: 1799px) {
   .home3-banner-section .banner-wrapper .banner-content-wrap h1 {
-    font-size: 59px;
+    font-size: 52px;
     max-width: 475px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 1399px) {
@@ -10510,7 +10511,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 .home3-banner-section .banner-wrapper .banner-content-wrap .para-area p {
   font-family: var(--font-inter);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
   margin-bottom: 0;
@@ -10559,7 +10560,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 @media (max-width: 1799px) {
   .home3-banner-section .banner-wrapper .banner-content-wrap .btm-area {
-    margin-top: 82px;
+    margin-top: 65px;
   }
 }
 @media (max-width: 1399px) {
@@ -10662,7 +10663,6 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   max-width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 2px solid var(--dark-white-color);
 }
 @media (max-width: 576px) {
   .home3-banner-section .banner-wrapper .banner-content-wrap .btm-area > li .author-area .author-img-grp li img {
@@ -13195,7 +13195,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   transform: rotate(45deg);
 }
 .home4-service-section-wrap .home4-service-section .service-card-wrap .single-service-card:hover .icon svg {
-  fill: #0f3d3a;
+  fill: #de2342;
 }
 .home4-service-section-wrap .home4-service-section .vector1 {
   position: absolute;
@@ -13250,7 +13250,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   margin-bottom: 0;
 }
 .home4-portfolio-section .porfolio-card-wrapper .portfolioCard {
-  background: #fce4e7;
+  background: #fffaea;
   border: 1px solid #eeeeee;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -13384,10 +13384,19 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   background: #faffd8;
 }
 .home4-portfolio-section .porfolio-card-wrapper .portfolioCard.three {
-  background: #e8fffd;
+  background: #f3f3f3;
 }
 .home4-portfolio-section .porfolio-card-wrapper .portfolioCard.four {
+  background: #e6f9ff;
+}
+.home4-portfolio-section .porfolio-card-wrapper .portfolioCard.five {
   background: #f0ffe9;
+}
+.home4-portfolio-section .porfolio-card-wrapper .portfolioCard.six {
+  background: #ffebfa;
+}
+.home4-portfolio-section .porfolio-card-wrapper .portfolioCard.seven {
+  background: #f0f0f0;
 }
 .home4-portfolio-section .contact-area {
   display: flex;
@@ -13551,7 +13560,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .breadcrumb-section .breadcrumb-content .para svg {
-  fill: #0f3d3a;
+  fill: #de2342;
 }
 .breadcrumb-section .breadcrumb-content .para p {
   font-family: var(--font-inter);
@@ -16133,7 +16142,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   margin-bottom: 33px;
 }
 .careers-details-page .careers-details-sidebar .social-area-wrap .social-area-title h4 a svg path {
-  stroke: #0f3d3a;
+  stroke: #de2342;
 }
 .careers-details-page .careers-details-sidebar .social-area-wrap .social-area {
   display: flex;
@@ -17091,7 +17100,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .team-details-page .profile-area .profile-content .para svg {
-  fill: #0f3d3a;
+  fill: #de2342;
 }
 .team-details-page .profile-area .profile-content .para p {
   font-family: var(--font-inter);
@@ -18563,7 +18572,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   gap: 18px;
 }
 .case-study-details-page .case-study-details-content ul.style-2 li svg {
-  fill: #0f3d3a;
+  fill: #de2342;
 }
 .case-study-details-page .case-study-details-content ul.style-3 {
   list-style: none;
@@ -18945,7 +18954,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   gap: 18px;
 }
 .portfolio-details-page .portfolio-details-content ul.style-2 li svg {
-  fill: #0f3d3a;
+  fill: #de2342;
 }
 .portfolio-details-page .portfolio-details-img img {
   border-radius: 10px;
