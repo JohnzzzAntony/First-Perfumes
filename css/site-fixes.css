@@ -322,17 +322,17 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
 
 /* The Bootstrap row inside the card carried the default -12px gutter margin,
    so the photo hung 12px past the card's rounded border. */
-.home4-portfolio-section .porfolio-card-wrapper .portfolioCard {
+.porfolio-card-wrapper .portfolioCard {
     overflow: hidden;
 }
 
-.home4-portfolio-section .porfolio-card-wrapper .portfolioCard > .row {
+.porfolio-card-wrapper .portfolioCard > .row {
     --bs-gutter-x: 0;
     height: 100%;
 }
 
 /* Full-bleed crop instead of a stretched image. */
-.home4-portfolio-section .porfolio-card-wrapper .portfolioCard .portfolio-img img {
+.porfolio-card-wrapper .portfolioCard .portfolio-img img {
     display: block;
     -o-object-fit: cover;
     object-fit: cover;
@@ -340,14 +340,246 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
 
 @media (min-width: 992px) {
     /* Comfortably above the tallest card's copy at every desktop width
-       (381px at 992px, 379px at 1280px), so no card outgrows the stack. */
-    .home4-portfolio-section .porfolio-card-wrapper .portfolioCard {
+       (381px at 992px, 379px at 1280px), so no card outgrows the stack.
+       Scoped to the wrapper rather than one section: the pin script uses a
+       document-wide gsap.utils.toArray(".portfolioCard"), so any page that
+       uses this component needs the same equal-height guarantee. */
+    .porfolio-card-wrapper .portfolioCard {
         height: clamp(420px, 30vw, 480px);
     }
 
     /* With a fixed height, space-between would strand the link at the bottom
        of a half-empty column — centre the block against the photo instead. */
-    .home4-portfolio-section .porfolio-card-wrapper .portfolioCard .portfolio-content {
+    .porfolio-card-wrapper .portfolioCard .portfolio-content {
         justify-content: center;
     }
+}
+
+/* -------------------------------------
+   9. Pricing cards — onto the site palette
+   `.pricing-card` ships from the template in mint / periwinkle / butter
+   (#cff0db, #dde6ff, #ffeaac). Those read as a SaaS pricing table, not as
+   this site, which is crimson on near-black over white. The programme tiers
+   on private-label.html are the only place the component is used, so they are
+   restated here as three neutral surfaces with the middle one carrying the
+   brand accent — same component, same markup, site's colours.
+---------------------------------------- */
+.pricing-card,
+.pricing-card.two,
+.pricing-card.three {
+    background-color: #f6f4f3;
+    border: 1px solid rgba(var(--title-color-opc), 0.08);
+}
+
+/* The middle tier is the one most partners land on — give it the accent so the
+   row has a centre of gravity instead of three equal-weight boxes. */
+.pricing-card.two {
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+}
+
+.pricing-card.two .pricing-top > span,
+.pricing-card.two .pricing-top h2,
+.pricing-card.two .pricing-content h3 {
+    color: #ffffff;
+}
+
+.pricing-card.two .pricing-top p,
+.pricing-card.two .pricing-content ul li {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.pricing-card.two .pricing-content ul li svg {
+    color: var(--primary-color1);
+}
+
+/* `li.close` marks a feature the tier does not include. The template only
+   recolours the tick; dim the label too so the row scans at a glance. */
+.pricing-card .pricing-content ul li.close {
+    opacity: 0.45;
+    text-decoration: line-through;
+}
+
+.pricing-card .pricing-content ul li svg {
+    color: var(--primary-color1);
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.pricing-card .pricing-content ul li {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* -------------------------------------
+   10. Key-feature chips — unscope, then re-colour
+   `.key-features-list li` is styled in style.css only under the full chain
+   `.service-details-page .service-details-content-wrap .key-features-area`.
+   Eleven of the fourteen pages that use the component put the list in a plain
+   `.container > .row` instead, so on those pages the chips lost every rule and
+   rendered as a bare bulleted list. Restating the rule on `.key-features-area`
+   alone fixes all of them at once.
+
+   The template's palette here (#e7e9fa lavender, #fef7cf butter, #e9ffdd mint)
+   is the same SaaS pastel set as the pricing cards and does not appear anywhere
+   on the homepage, so the chips are restated in the site's own neutrals with a
+   single dark chip for rhythm.
+---------------------------------------- */
+.key-features-area .key-features-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.key-features-area .key-features-list li {
+    border-radius: 10px;
+    background-color: #f6f4f3;
+    border: 1px solid rgba(var(--title-color-opc), 0.1);
+    padding: 40px 35px;
+    font-family: var(--font-spaceGrotesk);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--title-color);
+    margin-bottom: 0;
+    flex: 1 1 0;
+}
+
+/* The template staggers alternate chips downwards — keep that, it is the one
+   piece of movement in an otherwise static row. */
+.key-features-area .key-features-list li:nth-child(even) {
+    margin-top: 55px;
+}
+
+/* One chip carries the accent so the row has a focal point rather than four
+   identical tiles. `.two` was the template's transparent variant. */
+.key-features-area .key-features-list li.two {
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.key-features-area .key-features-list li.three {
+    background-color: #f6f4f3;
+}
+
+.key-features-area .key-features-list li.four {
+    background-color: #ffffff;
+}
+
+@media (max-width: 1399px) {
+    .key-features-area .key-features-list li {
+        padding: 35px 25px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .key-features-area .key-features-list li {
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .key-features-area .key-features-list {
+        flex-wrap: wrap;
+    }
+
+    .key-features-area .key-features-list li {
+        flex: 1 1 40%;
+        font-size: 18px;
+    }
+
+    .key-features-area .key-features-list li:nth-child(even) {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .key-features-area .key-features-list li {
+        padding: 20px 10px;
+    }
+}
+
+/* -------------------------------------
+   11. Section rhythm — one tunable gap
+   The template separates every section with a flat `mb-120` (120px desktop,
+   100px at 1200px, 90px on mobile), and there are 147 of them across the site.
+   Measured against painted content, that left 13% of the homepage and up to
+   25% of some inner pages as empty vertical band — the inner pages read as
+   twice as airy as the homepage they are supposed to match, because the
+   homepage absorbs its gaps inside full-bleed panels and sliders.
+
+   These two properties are the only dial. Raise them for a more editorial
+   feel, lower them to tighten further; nothing else needs to change, because
+   site-fixes.css loads after style.css and so wins over the template's own
+   media-query steps at equal specificity.
+---------------------------------------- */
+:root {
+    --section-gap: clamp(48px, 4.8vw, 76px);
+    --section-gap-sm: clamp(28px, 2.6vw, 44px);
+}
+
+.mb-120 {
+    margin-bottom: var(--section-gap);
+}
+
+.mt-120 {
+    margin-top: var(--section-gap);
+}
+
+.pt-120 {
+    padding-top: var(--section-gap);
+}
+
+.pb-120 {
+    padding-bottom: var(--section-gap);
+}
+
+.mb-60 {
+    margin-bottom: var(--section-gap-sm);
+}
+
+.mt-60 {
+    margin-top: var(--section-gap-sm);
+}
+
+/* -------------------------------------
+   12. Compliance strip title — restore the collapsed spaces
+   The template sets `display: inline-flex` on `.partner-title h5` purely to
+   get the pill shape. Flex layout drops whitespace-only text nodes, so every
+   `... under <span>five</span> international ...` heading rendered as
+   "underfiveinternational" on the 13 pages that use it. inline-block keeps
+   the pill (padding, border, radius, inline flow) and lays the text out as
+   text, which is also the only form that punctuation directly after the span
+   ("<span>ISO 22716</span>, US FDA") survives.
+---------------------------------------- */
+.partner-section .partner-title h3,
+.partner-section .partner-title h5 {
+    display: inline-block;
+}
+
+/* -------------------------------------
+   13. FAQ accordion — fill the column it was given
+   `.faq-wrap` is capped at 812px by the theme. That is right where it shares a
+   row (cosmetics-personal-care, perfume-manufacturing put it in a col-lg-7),
+   but five pages — careers, contact, expertise, faq, manufacturing — drop it
+   into a full-width col-lg-12 under a header that spans the whole container.
+   The cap then left roughly half the row empty and the accordion rules ended
+   short of the heading above them.
+
+   Uncap it only in that case, and hold the answer copy to a readable measure
+   so the rules can run the full width without the paragraphs following them.
+---------------------------------------- */
+[class*="col-"][class*="-12"] > .faq-wrap {
+    max-width: none;
+}
+
+[class*="col-"][class*="-12"] > .faq-wrap .accordion .accordion-item .accordion-body {
+    max-width: 75ch;
 }

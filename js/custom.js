@@ -820,13 +820,30 @@
           if ($("#tt-header").hasClass("tt-header-fixed")) {
             var $offset = $("#tt-header").height();
           } else {
-            var $offset = 0;
+            var $offset = 120;
           }
 
           // You can use data attribute (for example: data-offset="100") to set top offset in HTML markup if needed.
           if ($(this).data("offset") != undefined)
             $offset = $(this).data("offset");
 
+          // Hand the jump to ScrollSmoother. Without this the handler cancelled the
+          // browser's native jump and never scrolled, so every same-page #anchor was
+          // dead on desktop — including the header's own "#footer" link.
+          var el = target ? document.querySelector(target) : null;
+          if (!el) return true; // unknown target: let the browser deal with it
+
+          if (typeof smoother !== "undefined" && smoother) {
+            // Pass the element, not a pixel offset: under ScrollSmoother the content
+            // is transformed, so getBoundingClientRect() + scrollY double-counts the
+            // smoothing lag and lands short. The "top Npx" form resolves correctly.
+            smoother.scrollTo(el, true, "top " + $offset + "px");
+          } else {
+            window.scrollTo({
+              top: el.getBoundingClientRect().top + window.scrollY - $offset,
+              behavior: "smooth",
+            });
+          }
           return false;
         });
 

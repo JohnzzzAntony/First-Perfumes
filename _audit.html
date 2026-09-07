@@ -1,0 +1,87 @@
+<!doctype html>
+<!--
+  Responsive/layout audit harness. Not part of the site: nothing links to it and
+  it is absent from sitemap.xml. Serve the site (python -m http.server 8123),
+  open /_audit.html, and from the console run:
+
+      await runBatch(0, PAGES.length, 375, 800)     // mobile
+      await runBatch(0, PAGES.length, 768, 900)     // tablet
+      await runBatch(0, PAGES.length, 1440, 900)    // desktop
+
+  An empty object means every page passed. Each page is loaded in an iframe
+  sized to the target viewport and checked for horizontal overflow, images that
+  failed to load, tall empty containers, and flex/grid containers that swallow
+  the whitespace between a text node and an inline element (see site-fixes.css
+  section 12). check.py covers the static side; this covers the rendered side.
+-->
+<html><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><title>audit harness</title>
+<style>html,body{margin:0;background:#fff}iframe{border:0;display:block}</style>
+</head><body>
+<iframe id="f"></iframe>
+<script>
+const f = document.getElementById('f');
+window.loadAt = function(url, w, h){
+  return new Promise(res=>{
+    f.style.width = w+'px'; f.style.height = h+'px';
+    f.onload = () => setTimeout(()=>res(true), 900);
+    f.src = url;
+  });
+};
+window.auditFrame = function(){
+  const d = f.contentDocument, win = f.contentWindow;
+  const de = d.documentElement;
+  const r = {scrollW: de.scrollWidth, clientW: de.clientWidth, overflow: [], broken: [], empty: [], flexText: []};
+  const name = el => el.tagName.toLowerCase() + (el.id?('#'+el.id):'') + '.' +
+    (typeof el.className === 'string' ? el.className.trim().split(/\s+/).slice(0,3).join('.') : '');
+  if (de.scrollWidth > de.clientWidth + 2) {
+    d.querySelectorAll('body *').forEach(el=>{
+      const b = el.getBoundingClientRect();
+      const cs = win.getComputedStyle(el);
+      if (cs.position === 'fixed' || cs.visibility === 'hidden' || cs.display === 'none') return;
+      if (b.width > 0 && b.right > de.clientWidth + 2) r.overflow.push({el: name(el), right: Math.round(b.right)});
+    });
+    r.overflow = r.overflow.slice(0, 6);
+  }
+  d.querySelectorAll('img').forEach(i=>{ if (i.complete && i.naturalWidth === 0) r.broken.push(i.getAttribute('src')); });
+  d.querySelectorAll('section, .container, .row, div[class*="-section"], div[class*="-area"]').forEach(el=>{
+    const b = el.getBoundingClientRect();
+    if (b.height > 100 && el.textContent.trim() === '' &&
+        el.querySelectorAll('img,svg,video,canvas,iframe,input,button').length === 0) {
+      r.empty.push({el: name(el), h: Math.round(b.height)});
+    }
+  });
+  r.empty = r.empty.slice(0, 10);
+  // flex/grid containers that mix a text node with an element drop the
+  // whitespace between them, gluing words together
+  d.querySelectorAll('body *').forEach(el=>{
+    const cs = win.getComputedStyle(el);
+    if (!/flex|grid/.test(cs.display)) return;
+    if (cs.gap && cs.gap !== 'normal' && parseFloat(cs.gap) > 0) return;
+    const kids = [...el.childNodes];
+    for (let i=0;i<kids.length-1;i++){
+      const a=kids[i], b=kids[i+1];
+      if ((a.nodeType===3 && /\S/.test(a.textContent) && /\s$/.test(a.textContent) && b.nodeType===1) ||
+          (a.nodeType===1 && b.nodeType===3 && /\S/.test(b.textContent) && /^\s/.test(b.textContent))) {
+        r.flexText.push({el: name(el), text: el.textContent.replace(/\s+/g,' ').trim().slice(0,60)});
+        break;
+      }
+    }
+  });
+  r.flexText = r.flexText.slice(0,6);
+  return r;
+};
+window.PAGES = ["index","about-us","expertise","fragrance-development","perfume-manufacturing","private-label-solutions","cosmetics-personal-care","packaging-filling","bottle-decoration","manufacturing","products","fine-fragrances","oriental-fragrances","home-lifestyle","private-label","insights","article-details","our-team","careers","contact","faq","privacy-policy","terms-conditions","support-policy","404"];
+window.runBatch = async function(from, to, w, h){
+  const out = {};
+  for (const p of PAGES.slice(from,to)) {
+    await loadAt('/'+p+'.html', w, h);
+    const r = auditFrame();
+    if (r.scrollW > r.clientW + 2 || r.broken.length || r.empty.length || r.flexText.length) {
+      out[p] = {sw:r.scrollW, cw:r.clientW, overflow:r.overflow,
+                broken:[...new Set(r.broken)].slice(0,5), empty:r.empty, flexText:r.flexText};
+    }
+  }
+  return out;
+};
+</script>
+</body></html>

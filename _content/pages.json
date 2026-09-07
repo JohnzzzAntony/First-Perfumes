@@ -1,0 +1,258 @@
+[
+  {
+    "slug": "index",
+    "nav": "home",
+    "title": "First Perfumes | Premium Fragrance Manufacturer in UAE",
+    "description": "First Perfumes Ind LLC is a premium fragrance manufacturer in the UAE, offering end-to-end perfume development, private label production, packaging and filling since 2006.",
+    "preload": "images/banner-img-slide.webp",
+    "breadcrumb": null
+  },
+  {
+    "slug": "about-us",
+    "nav": "about",
+    "title": "About Us | First Perfumes Ind LLC",
+    "description": "Founded in 2006 in Jebel Ali, Dubai, First Perfumes Ind LLC has grown into a globally recognised fragrance and cosmetics manufacturer built on heritage, innovation and sustainability.",
+    "preload": "media/video-poster.webp",
+    "breadcrumb": null,
+    "h1": "Two Decades of Fragrance Craftsmanship",
+    "intro": "From a single production line in Jebel Ali to a globally trusted manufacturing partner for luxury houses and emerging brands alike."
+  },
+  {
+    "slug": "expertise",
+    "nav": "expertise",
+    "title": "Our Expertise | First Perfumes Ind LLC",
+    "description": "Fragrance development, perfume manufacturing, private label solutions, cosmetics, packaging and bottle decoration — six disciplines delivered under one roof in Dubai.",
+    "preload": "images/production-lines.webp",
+    "breadcrumb": "Our Expertise",
+    "h1": "Six Disciplines, One Roof",
+    "intro": "Every capability your brand needs to go from an idea to a market-ready product, integrated in a single facility for total quality control."
+  },
+  {
+    "slug": "fragrance-development",
+    "nav": "expertise",
+    "title": "Fragrance Development | First Perfumes Ind LLC",
+    "description": "Custom fragrance accords and formulations, from classic perfumery traditions to modern niche creations, developed in our Dubai R&D laboratory.",
+    "preload": "images/rnd-lab.webp",
+    "breadcrumb": "Fragrance Development",
+    "trail": [["Our Expertise", "expertise.html"]],
+    "h1": "Fragrance Development",
+    "intro": "Bespoke accords built around your brand story, your market and your price point — from first brief to approved formula."
+  },
+  {
+    "slug": "perfume-manufacturing",
+    "nav": "expertise",
+    "title": "Perfume Manufacturing | First Perfumes Ind LLC",
+    "description": "Automated compounding, batching, filling and bottling with flexible volumes, from small exclusive batches to full-scale mass production.",
+    "preload": "images/perfume-compounding.webp",
+    "breadcrumb": "Perfume Manufacturing",
+    "trail": [["Our Expertise", "expertise.html"]],
+    "h1": "Perfume Manufacturing",
+    "intro": "Automated compounding, batching, filling and bottling — engineered for consistency at every volume."
+  },
+  {
+    "slug": "private-label-solutions",
+    "nav": "expertise",
+    "title": "Private Label Solutions | First Perfumes Ind LLC",
+    "description": "Full-service private label support covering fragrance development, packaging design, compliance testing and worldwide logistics.",
+    "preload": "images/home4-portfolio-img.webp",
+    "breadcrumb": "Private Label Solutions",
+    "trail": [["Our Expertise", "expertise.html"]],
+    "h1": "Private Label Solutions",
+    "intro": "Your brand on the bottle, our infrastructure behind it — formulation, packaging, registration and delivery handled end to end."
+  },
+  {
+    "slug": "cosmetics-personal-care",
+    "nav": "expertise",
+    "title": "Cosmetics & Personal Care | First Perfumes Ind LLC",
+    "description": "Cleanroom manufacturing of body lotions, creams, oils and hair mists using safe, sustainable ingredients aligned to international standards.",
+    "preload": "images/cosmetics-care.webp",
+    "breadcrumb": "Cosmetics & Personal Care",
+    "trail": [["Our Expertise", "expertise.html"]],
+    "h1": "Cosmetics & Personal Care",
+    "intro": "Dedicated cleanroom lines for creams, lotions, oils and hair mists, formulated to ISO 22716 cosmetics GMP."
+  },
+  {
+    "slug": "packaging-filling",
+    "nav": "expertise",
+    "title": "Packaging & Filling | First Perfumes Ind LLC",
+    "description": "In-house luxury packaging design, filling and assembly built around sustainability — recyclable materials, energy-efficient equipment and waste minimisation.",
+    "preload": "images/packaging-unit.webp",
+    "breadcrumb": "Packaging & Filling",
+    "trail": [["Our Expertise", "expertise.html"]],
+    "h1": "Packaging & Filling",
+    "intro": "Luxury presentation engineered for the shelf and for the planet, assembled on our own lines in Jebel Ali."
+  },
+  {
+    "slug": "bottle-decoration",
+    "nav": "expertise",
+    "title": "Bottle & Decoration | First Perfumes Ind LLC",
+    "description": "Precision bottle lacquering, multi-colour silk-screen printing, hot foil stamping and custom decorative finishes for luxury fragrance packaging.",
+    "preload": "images/bottle-decor.webp",
+    "breadcrumb": "Bottle & Decoration",
+    "trail": [["Our Expertise", "expertise.html"]],
+    "h1": "Bottle & Decoration",
+    "intro": "Lacquering, silk-screen printing, hot foil and specialty finishes that turn a container into a brand statement."
+  },
+  {
+    "slug": "manufacturing",
+    "nav": "manufacturing",
+    "title": "Manufacturing | First Perfumes Ind LLC",
+    "description": "Inside our Jebel Ali facility: R&D, fragrance creation, production, quality control and packaging integrated under one roof with full batch traceability.",
+    "preload": "images/facility-jebel-ali.webp",
+    "breadcrumb": "Manufacturing",
+    "h1": "Inside Our Jebel Ali Facility",
+    "intro": "Every key production function under one roof, so quality, traceability and lead times stay entirely in our control."
+  },
+  {
+    "slug": "products",
+    "nav": "products",
+    "title": "Products & Solutions | First Perfumes Ind LLC",
+    "description": "Fine fragrances, oriental blends, home and lifestyle scents and complete private label programmes manufactured in the UAE.",
+    "preload": "images/our-work-img.webp",
+    "breadcrumb": "Products & Solutions",
+    "h1": "Products & Solutions",
+    "intro": "Four product families, each backed by the same laboratory, the same lines and the same compliance standards."
+  },
+  {
+    "slug": "fine-fragrances",
+    "nav": "products",
+    "title": "Fine Fragrances | First Perfumes Ind LLC",
+    "description": "Eau de Parfum, Eau de Toilette and Extrait de Parfum crafted through precision compounding and rigorous stability testing.",
+    "preload": "images/our-work-img.webp",
+    "breadcrumb": "Fine Fragrances",
+    "trail": [["Products & Solutions", "products.html"]],
+    "h1": "Fine Fragrances",
+    "intro": "Eau de Parfum, Eau de Toilette and Extrait de Parfum, built to hold their character from first spray to dry-down."
+  },
+  {
+    "slug": "oriental-fragrances",
+    "nav": "products",
+    "title": "Oriental Fragrances | First Perfumes Ind LLC",
+    "description": "Heritage-inspired oud, bakhoor and Arabic perfume manufacturing drawing on deep regional expertise and premium raw materials.",
+    "preload": "images/our-work-img2.webp",
+    "breadcrumb": "Oriental Fragrances",
+    "trail": [["Products & Solutions", "products.html"]],
+    "h1": "Oriental Fragrances",
+    "intro": "Oud, bakhoor and Arabic perfumery made the way the region expects, at the volumes modern brands need."
+  },
+  {
+    "slug": "home-lifestyle",
+    "nav": "products",
+    "title": "Home & Lifestyle | First Perfumes Ind LLC",
+    "description": "Home fragrances, scented candles and reed diffusers manufactured with the same formulation discipline as our fine fragrance lines.",
+    "preload": "images/our-work-img3.webp",
+    "breadcrumb": "Home & Lifestyle",
+    "trail": [["Products & Solutions", "products.html"]],
+    "h1": "Home & Lifestyle",
+    "intro": "Room sprays, candles and diffusers developed to carry a brand's signature scent beyond the body."
+  },
+  {
+    "slug": "private-label",
+    "nav": "products",
+    "title": "Private Label | First Perfumes Ind LLC",
+    "description": "Custom products, custom packaging and brand development programmes for emerging and established fragrance houses.",
+    "preload": "images/our-work-img4.webp",
+    "breadcrumb": "Private Label",
+    "trail": [["Products & Solutions", "products.html"]],
+    "h1": "Private Label Programmes",
+    "intro": "Three ways to work with us, from filling an existing formula to building a fragrance brand from a blank page."
+  },
+  {
+    "slug": "insights",
+    "nav": "insights",
+    "title": "Insights | First Perfumes Ind LLC",
+    "description": "Notes on fragrance formulation, manufacturing standards, sustainability and the business of building a perfume brand.",
+    "preload": "images/blog-img.webp",
+    "breadcrumb": "Insights",
+    "h1": "Insights from the Lab Floor",
+    "intro": "What we are learning about formulation, compliance and sustainable manufacturing — written by the people doing the work."
+  },
+  {
+    "slug": "article-details",
+    "nav": "insights",
+    "title": "How a Fragrance Brief Becomes a Formula | First Perfumes Ind LLC",
+    "description": "A walk through the six stages that turn a written brief into an approved, stability-tested fragrance formula ready for production.",
+    "preload": "images/blog-img.webp",
+    "breadcrumb": "Article",
+    "trail": [["Insights", "insights.html"]],
+    "h1": "How a Fragrance Brief Becomes a Formula",
+    "intro": "Six stages, roughly twelve weeks, and a great deal of smelling — inside the route from brief to approved formula."
+  },
+  {
+    "slug": "our-team",
+    "nav": "about",
+    "title": "Our Team | First Perfumes Ind LLC",
+    "description": "Meet the perfumers, chemists, engineers and compliance specialists behind every batch that leaves our Jebel Ali facility.",
+    "preload": "images/team-img.webp",
+    "breadcrumb": "Our Team",
+    "trail": [["About Us", "about-us.html"]],
+    "h1": "The People Behind the Bottles",
+    "intro": "Perfumers, chemists, line engineers and compliance specialists — the team that turns a brief into a shipped product."
+  },
+  {
+    "slug": "careers",
+    "nav": "about",
+    "title": "Careers | First Perfumes Ind LLC",
+    "description": "Open roles in perfumery, laboratory science, production engineering and quality assurance at our Dubai manufacturing facility.",
+    "preload": "images/team-area-bg.webp",
+    "breadcrumb": "Careers",
+    "trail": [["About Us", "about-us.html"]],
+    "h1": "Build Your Career in Fragrance",
+    "intro": "We hire for curiosity and precision in equal measure. Here is what we are looking for right now."
+  },
+  {
+    "slug": "contact",
+    "nav": null,
+    "title": "Contact Us | First Perfumes Ind LLC",
+    "description": "Talk to our team about fragrance development, private label manufacturing or a facility visit. Jebel Ali Industrial First, Dubai, UAE.",
+    "preload": "images/facility-jebel-ali.webp",
+    "breadcrumb": "Contact Us",
+    "h1": "Let's Build Something Worth Wearing",
+    "intro": "Tell us about your brand, your volumes and your timeline. We reply to every enquiry within one business day."
+  },
+  {
+    "slug": "faq",
+    "nav": null,
+    "title": "Frequently Asked Questions | First Perfumes Ind LLC",
+    "description": "Minimum order quantities, lead times, compliance, sampling and everything else brands ask before starting production with us.",
+    "breadcrumb": "FAQ",
+    "h1": "Questions, Answered",
+    "intro": "The things brands ask us most often, from minimum order quantities to registration timelines."
+  },
+  {
+    "slug": "privacy-policy",
+    "nav": null,
+    "title": "Privacy Policy | First Perfumes Ind LLC",
+    "description": "How First Perfumes Ind LLC collects, uses, stores and protects personal data submitted through this website.",
+    "breadcrumb": "Privacy Policy",
+    "h1": "Privacy Policy",
+    "intro": "How we collect, use and protect the information you share with us."
+  },
+  {
+    "slug": "terms-conditions",
+    "nav": null,
+    "title": "Terms & Conditions | First Perfumes Ind LLC",
+    "description": "The terms governing use of the First Perfumes Ind LLC website and the services described on it.",
+    "breadcrumb": "Terms & Conditions",
+    "h1": "Terms & Conditions",
+    "intro": "The terms that govern your use of this website and our services."
+  },
+  {
+    "slug": "support-policy",
+    "nav": null,
+    "title": "Support Policy | First Perfumes Ind LLC",
+    "description": "Response times, escalation paths and the support commitments we make to manufacturing partners.",
+    "breadcrumb": "Support Policy",
+    "h1": "Support Policy",
+    "intro": "What you can expect from us once a project is live — response times, escalation and account contacts."
+  },
+  {
+    "slug": "404",
+    "nav": null,
+    "title": "Page Not Found | First Perfumes Ind LLC",
+    "description": "The page you are looking for has moved or no longer exists.",
+    "breadcrumb": "404",
+    "h1": "This Page Has Evaporated",
+    "intro": "The page you were looking for has moved or no longer exists. Let's get you back on track."
+  }
+]
