@@ -125,17 +125,6 @@
     "intro": "Six stages, roughly twelve weeks, and a great deal of smelling — inside the route from brief to approved formula."
   },
   {
-    "slug": "our-team",
-    "nav": "about",
-    "title": "Our Team | First Perfumes Ind LLC",
-    "description": "Meet the perfumers, chemists, engineers and compliance specialists behind every batch that leaves our Jebel Ali facility.",
-    "preload": "images/team-img.webp",
-    "breadcrumb": "Our Team",
-    "trail": [["About Us", "about-us.html"]],
-    "h1": "The People Behind the Bottles",
-    "intro": "Perfumers, chemists, line engineers and compliance specialists — the team that turns a brief into a shipped product."
-  },
-  {
     "slug": "careers",
     "nav": "about",
     "title": "Careers | First Perfumes Ind LLC",
