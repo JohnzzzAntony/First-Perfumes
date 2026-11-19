@@ -706,3 +706,81 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
     outline: 2px solid #1E1E1E;
     outline-offset: 2px;
 }
+
+/* -------------------------------------
+   White sections
+   Every section-sized panel is white; a hairline in the palette grey keeps
+   its shape. Pink and grey stay on small elements (buttons, pills, cards).
+---------------------------------------- */
+.home3-banner-section .banner-wrapper,
+.home4-about-us-section .about-us-left-area .feature-wrap,
+.home4-process-section .process-section-wrap,
+.home4-portfolio-section .porfolio-card-wrapper .portfolioCard[class],
+.video-and-counter-section .counter-area-wrap,
+.footer-section.home3-footer-section .footer-menu-wrap,
+.home3-portfolio-section .portfolio-wrapper,
+.portfolio-details-page .portfolio-details-banner {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E1;
+}
+
+/* Hero copy sits an even distance from every edge of its panel. */
+.home3-banner-section .banner-wrapper .banner-content-wrap {
+    margin: 0;
+    padding: clamp(32px, 4.5vw, 64px);
+}
+
+/* The About photo fills its frame instead of leaving bars at the sides. */
+.home4-about-us-section .about-us-left-area .feature-wrap {
+    overflow: hidden;
+}
+.home4-about-us-section .about-us-left-area .feature-wrap > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer contact icons: dark glyph on a quiet tile, centred with its text. */
+.footer-section.home3-footer-section .footer-menu-wrap .footer-widget .contact-list .single-contact {
+    align-items: center;
+    gap: 14px;
+}
+.footer-section.home3-footer-section .footer-menu-wrap .footer-widget .contact-list .single-contact .icon {
+    border: 0;
+    border-radius: 10px;
+    background: #E2E2E1;
+}
+.footer-section.home3-footer-section .footer-menu-wrap .footer-widget .contact-list .single-contact .icon svg {
+    fill: #1E1E1E;
+    width: 22px;
+    height: 22px;
+}
+
+/* Button arrows match the button text; several template rules recolour them per page, hence !important. */
+.primary-btn1 svg {
+    fill: #1E1E1E !important;
+}
+
+/* Hero photo fills the full panel height; slider dots sit on the photo, not in a strip below it. */
+.home3-banner-section .banner-wrapper .banner-img-wrap {
+    position: relative;
+}
+.home3-banner-section .banner-wrapper .banner-img-wrap .swiper,
+.home3-banner-section .banner-wrapper .banner-img-wrap .swiper-wrapper,
+.home3-banner-section .banner-wrapper .banner-img-wrap .swiper-slide,
+.home3-banner-section .banner-wrapper .banner-img-wrap .img-area,
+.home3-banner-section .banner-wrapper .banner-img-wrap .img-area img {
+    height: 100%;
+}
+.home3-banner-section .banner-wrapper .banner-img-wrap .img-area img {
+    width: 100%;
+    object-fit: cover;
+}
+.home3-banner-section .banner-wrapper .banner-img-wrap .banner-pagi {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    width: auto;
+    z-index: 2;
+}
