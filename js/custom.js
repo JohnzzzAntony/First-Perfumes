@@ -607,7 +607,7 @@
             duration: 0.3,
             borderWidth: 0,
             opacity: 0.2,
-            backgroundColor: "#CCC",
+            backgroundColor: "#E2E2E1",
             width: "90px",
             height: "90px",
           });

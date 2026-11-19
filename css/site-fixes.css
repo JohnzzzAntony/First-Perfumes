@@ -182,12 +182,12 @@ header .header-area-wrap .main-menu > ul > li .mega-menu.expertise-mega .menu-ro
 .home4-about-us-section .about-us-left-area .feature-wrap {
     max-width: none;
     width: 100%;
-    background: #f6f6f6;
+    background: #FFE5E7;
 }
 
 /* The sketch is white line art on white, so the card stays light in dark mode. */
 body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
-    background: #ffffff;
+    background: #FFE5E7;
 }
 
 .home4-about-us-section .about-us-left-area .feature-wrap > img {
@@ -389,30 +389,30 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
 .pricing-card,
 .pricing-card.two,
 .pricing-card.three {
-    background-color: #f6f4f3;
-    border: 1px solid rgba(var(--title-color-opc), 0.08);
+    background-color: #FFE5E7;
+    border: 1px solid rgba(30, 30, 30, 0.08);
 }
 
 /* The middle tier is the one most partners land on — give it the accent so the
    row has a centre of gravity instead of three equal-weight boxes. */
 .pricing-card.two {
-    background-color: #1e1e1e;
-    border-color: #1e1e1e;
+    background-color: #E2E2E1;
+    border-color: #1E1E1E;
 }
 
 .pricing-card.two .pricing-top > span,
 .pricing-card.two .pricing-top h2,
 .pricing-card.two .pricing-content h3 {
-    color: #ffffff;
+    color: #1E1E1E;
 }
 
 .pricing-card.two .pricing-top p,
 .pricing-card.two .pricing-content ul li {
-    color: rgba(255, 255, 255, 0.72);
+    color: rgba(30, 30, 30, 0.72);
 }
 
 .pricing-card.two .pricing-content ul li svg {
-    color: var(--primary-color1);
+    color: #1E1E1E;
 }
 
 /* `li.close` marks a feature the tier does not include. The template only
@@ -423,7 +423,7 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
 }
 
 .pricing-card .pricing-content ul li svg {
-    color: var(--primary-color1);
+    color: #1E1E1E;
     flex: 0 0 auto;
     margin-right: 10px;
 }
@@ -458,8 +458,8 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
 
 .key-features-area .key-features-list li {
     border-radius: 10px;
-    background-color: #f6f4f3;
-    border: 1px solid rgba(var(--title-color-opc), 0.1);
+    background-color: #FFE5E7;
+    border: 1px solid rgba(30, 30, 30, 0.1);
     padding: 40px 35px;
     font-family: var(--font-spaceGrotesk);
     font-weight: 500;
@@ -467,7 +467,7 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
     line-height: 1.3;
     text-align: center;
     text-transform: capitalize;
-    color: var(--title-color);
+    color: #1E1E1E;
     margin-bottom: 0;
     flex: 1 1 0;
 }
@@ -481,17 +481,17 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
 /* One chip carries the accent so the row has a focal point rather than four
    identical tiles. `.two` was the template's transparent variant. */
 .key-features-area .key-features-list li.two {
-    background-color: #1e1e1e;
-    border-color: #1e1e1e;
-    color: #ffffff;
+    background-color: #E2E2E1;
+    border-color: #1E1E1E;
+    color: #1E1E1E;
 }
 
 .key-features-area .key-features-list li.three {
-    background-color: #f6f4f3;
+    background-color: #FFE5E7;
 }
 
 .key-features-area .key-features-list li.four {
-    background-color: #ffffff;
+    background-color: #FFE5E7;
 }
 
 @media (max-width: 1399px) {
@@ -665,4 +665,44 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
 .table-container table td.job-type {
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* -------------------------------------
+   Two-colour palette touch-ups
+---------------------------------------- */
+/* The footer's line art was drawn for a black panel; on the light panel it cuts through the text. */
+.footer-section.home3-footer-section .footer-menu-wrap::after {
+    content: none;
+}
+
+/* A grey border disappears on the pink page, so eyebrow pills get a grey fill instead. */
+.section-title > span {
+    background-color: #E2E2E1;
+    border-color: #E2E2E1;
+}
+
+/* Decorative texture images (dark green panels, pink hero wash, footer texture) become flat palette colour. */
+.home3-banner-section .banner-wrapper,
+.home3-portfolio-section .portfolio-wrapper,
+.portfolio-details-page .portfolio-details-banner,
+.footer-section {
+    background-image: none;
+}
+.home3-banner-section .banner-wrapper,
+.home3-portfolio-section .portfolio-wrapper,
+.portfolio-details-page .portfolio-details-banner {
+    background-color: #E2E2E1;
+}
+
+/* Filled buttons used to be red; in palette colours they need an outline to read as buttons on any surface. */
+.primary-btn1,
+.primary-btn2:not(.transparent) .content,
+.primary-btn2:not(.transparent) .icon {
+    border: 1px solid #1E1E1E;
+}
+
+/* Keyboard focus stays visible now that the old coloured focus states are gone. */
+:focus-visible {
+    outline: 2px solid #1E1E1E;
+    outline-offset: 2px;
 }
