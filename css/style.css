@@ -545,7 +545,7 @@ body.tt-magic-cursor #magic-cursor {
   opacity: 0;
   visibility: hidden;
   transform: scale(0);
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-radius: 100px;
   /* pill shape */
   font-size: 14px;
@@ -611,7 +611,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 
 #ball.magnetic-active {
-  background-image: linear-gradient(112.83deg, rgba(255, 229, 231, 0.47) 0%, rgba(255, 229, 231, 0) 110.84%);
+  background-image: linear-gradient(112.83deg, rgba(255, 255, 255, 0.47) 0%, rgba(255, 255, 255, 0) 110.84%);
   background-color: rgba(226, 226, 225, 0.5);
   backdrop-filter: blur(1.1px);
   border-color: transparent !important;
@@ -738,7 +738,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 .nice-select .list {
   width: 100%;
-  background: #FFE5E7;
+  background: #FFFFFF;
   margin-top: 0;
   border-radius: 0 0 5px 5px;
 }
@@ -1183,7 +1183,7 @@ body.tt-magic-cursor #magic-cursor {
   border-radius: 0;
 }
 .primary-btn1.white-bg {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   color: #1E1E1E;
 }
 .primary-btn1.white-bg::after {
@@ -1401,7 +1401,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 .form-inner input {
   width: 100%;
-  background: #FFE5E7;
+  background: #FFFFFF;
   color: #525252;
   font-family: var(--font-inter);
   font-size: 16px;
@@ -1428,7 +1428,7 @@ body.tt-magic-cursor #magic-cursor {
 .form-inner textarea {
   width: 100%;
   border-radius: 10px;
-  background: #FFE5E7;
+  background: #FFFFFF;
   color: #525252;
   border: 1px solid #E2E2E1;
   outline: none;
@@ -1529,7 +1529,7 @@ body.tt-magic-cursor #magic-cursor {
   height: 35px;
   border-radius: 50%;
   border: 1px solid #E2E2E1;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1573,7 +1573,7 @@ body.tt-magic-cursor #magic-cursor {
   width: 510px;
   height: 100%;
   overflow: auto;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   transform: translateX(120%);
   transform-origin: right;
   transition: transform 0.5s ease-in;
@@ -1755,7 +1755,7 @@ body.tt-magic-cursor #magic-cursor {
   height: 44px;
   max-width: 44px;
   min-width: 44px;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2023,13 +2023,13 @@ header.sticky {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   box-shadow: 5px 3px 40px rgba(226, 226, 225, 0.1);
   z-index: 999;
 }
 header .header-area-wrap {
   border: 1px solid #E2E2E1;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-radius: 140px;
   padding: 0px 50px;
   position: relative;
@@ -2120,7 +2120,7 @@ header .header-area-wrap .nav-right .language-area .language-list {
   right: 0;
   z-index: 9999;
   width: 180px;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   box-shadow: 0px 30px 80px rgba(226, 226, 225, 0.08);
   display: none;
   transform: scaleY(0);
@@ -2334,7 +2334,7 @@ header .header-area-wrap .main-menu > ul > li ul.sub-menu {
   margin: 0;
   display: none;
   min-width: 220px;
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   border-radius: 10px;
   padding: 15px 0;
@@ -2434,7 +2434,7 @@ header .header-area-wrap .main-menu > ul > li ul.sub-menu > li .sub-menu {
   position: absolute;
   max-width: 230px;
   min-width: 215px;
-  background: #FFE5E7;
+  background: #FFFFFF;
   padding: 10px 0;
   top: 3px;
 }
@@ -2475,7 +2475,7 @@ header .header-area-wrap .main-menu > ul > li .mega-menu {
   transform: translateX(-50%);
   top: 76px;
   display: none;
-  background: #FFE5E7;
+  background: #FFFFFF;
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.102);
   border-radius: 20px;
   width: 100%;
@@ -2922,7 +2922,7 @@ header .header-area-wrap .mobile-logo-area .menu-close-btn:hover i {
     z-index: 99999;
     height: 100%;
     overflow: auto;
-    background: #FFE5E7;
+    background: #FFFFFF;
     border-right: 1px solid #E2E2E1;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in;
@@ -3877,7 +3877,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: rgba(255, 229, 231, 0.6118);
+  background-color: rgba(255, 255, 255, 0.6118);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4526,7 +4526,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   height: 0%;
   left: 50%;
   top: 50%;
-  background-color: rgba(255, 229, 231, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   transform: translate(-50%, -50%) rotate(-45deg);
   content: "";
   z-index: 1;
@@ -4795,7 +4795,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 .portfolio-card.style-3 .portfolio-content h3 a {
   color: #1E1E1E;
-  background: linear-gradient(to bottom, #FFE5E7 0%, #FFE5E7 98%);
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 98%);
   background-repeat: no-repeat;
   background-size: 0px 1.5px;
   background-position: right 95%;
@@ -5587,7 +5587,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 
 .service-card {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-radius: 10px;
   padding: 80px 30px;
   position: relative;
@@ -5930,7 +5930,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 
 .contact-form-wrap {
   padding: 60px 50px;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-radius: 20px;
 }
 @media (max-width: 1399px) {
@@ -5989,7 +5989,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   padding: 15px 32px;
 }
 .contact-form-wrap.inner-contact-from {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border: 1px solid #E2E2E1;
 }
 .contact-form-wrap.inner-contact-from .form-inner input:focus {
@@ -5999,7 +5999,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   border-color: #E2E2E1;
 }
 .contact-form-wrap.inner-contact-from .form-inner2 ul li .form-check .form-check-input {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
 }
 .contact-form-wrap.inner-contact-from .form-inner2 ul li .form-check .form-check-input:checked {
   background-color: #E2E2E1;
@@ -6154,7 +6154,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 .testimonial-card .testimonial-img-wrap .testimonial-img .shape-area .single-shape {
   width: 16px;
   height: 100%;
-  background: linear-gradient(90deg, rgba(255, 229, 231, 0) 0%, rgba(226, 226, 225, 0.2) 16.67%, rgba(255, 229, 231, 0) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(226, 226, 225, 0.2) 16.67%, rgba(255, 255, 255, 0) 100%);
   background-blend-mode: overlay;
   backdrop-filter: blur(100px);
   transform: rotateY(-50deg);
@@ -6466,11 +6466,11 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 .partner-section .partner-wrap::before {
   left: 0;
-  background: linear-gradient(to right, #FFE5E7, transparent);
+  background: linear-gradient(to right, #FFFFFF, transparent);
 }
 .partner-section .partner-wrap::after {
   right: 0;
-  background: linear-gradient(to left, #FFE5E7, transparent);
+  background: linear-gradient(to left, #FFFFFF, transparent);
 }
 .partner-section .partner-wrap .marquee {
   display: flex;
@@ -6669,7 +6669,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 
 .case-study-card {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border: 1px solid #E2E2E1;
   padding: 10px;
   border-radius: 10px;
@@ -7146,7 +7146,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .footer-section .footer-menu-wrap .footer-contact-wrap .primary-btn1::after {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
 }
 .footer-section .footer-menu-wrap .footer-contact-wrap .primary-btn1:hover {
   color: #1E1E1E;
@@ -7807,7 +7807,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   white-space: nowrap;
   position: relative;
   display: inline-block;
-  background: linear-gradient(to bottom, #FFE5E7 0%, #FFE5E7 98%);
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 98%);
   background-repeat: no-repeat;
   background-size: 100% 1px;
   background-position: left 100%;
@@ -7892,7 +7892,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 .footer-section.home4-footer-section .divider::after {
   content: "";
   position: absolute;
-  background: rgba(255, 229, 231, 0.06);
+  background: rgba(255, 255, 255, 0.06);
   top: -65px;
   left: 90%;
   height: 363px;
@@ -8275,7 +8275,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   white-space: nowrap;
   position: relative;
   display: inline-block;
-  background: linear-gradient(to bottom, #FFE5E7 0%, #FFE5E7 98%);
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 98%);
   background-repeat: no-repeat;
   background-size: 100% 1px;
   background-position: left 100%;
@@ -8453,7 +8453,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 .footer-section.home5-footer-section .footer-top-area-wrap .footer-top-area .footer-top-right-content .email-area .form-inner {
   display: flex;
   align-items: center;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   padding: 1px 5px;
   border-radius: 10px;
 }
@@ -8472,7 +8472,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 @media (max-width: 576px) {
   .footer-section.home5-footer-section .footer-top-area-wrap .footer-top-area .footer-top-right-content .email-area .form-inner input {
-    background-color: #FFE5E7;
+    background-color: #FFFFFF;
     height: 52px;
   }
 }
@@ -8621,7 +8621,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   white-space: nowrap;
   position: relative;
   display: inline-block;
-  background: linear-gradient(to bottom, #FFE5E7 0%, #FFE5E7 98%);
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 98%);
   background-repeat: no-repeat;
   background-size: 100% 1px;
   background-position: left 100%;
@@ -8941,7 +8941,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   fill: #FFE5E7;
 }
 .home2-process-section.sass-process-section .process-wrapper .process-card .process-content {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border: 1px solid #E2E2E1;
 }
 .home2-process-section.sass-process-section .process-wrapper .process-card .process-content ul li svg circle {
@@ -8993,7 +8993,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 .testimonial-card2 .testimonial-img-wrap .testimonial-img .shape-area .single-shape {
   width: 16px;
   height: 100%;
-  background: linear-gradient(90deg, rgba(255, 229, 231, 0) 0%, rgba(226, 226, 225, 0.2) 16.67%, rgba(255, 229, 231, 0) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(226, 226, 225, 0.2) 16.67%, rgba(255, 255, 255, 0) 100%);
   background-blend-mode: overlay;
   backdrop-filter: blur(100px);
   transform: rotateY(-50deg);
@@ -9320,7 +9320,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   padding: 13px 20px;
   border-radius: 10px;
 }
@@ -9420,7 +9420,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.2;
-  background: linear-gradient(to bottom, #FFE5E7 0%, #FFE5E7 98%);
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 98%);
   background-repeat: no-repeat;
   background-size: 0px 1.5px;
   background-position: right 95%;
@@ -9666,7 +9666,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .home2-banner-section .banner-wrapper-wrap .banner-wrapper .left-content .button-area .primary-btn1::after {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
 }
 .home2-banner-section .banner-wrapper-wrap .banner-wrapper .left-content .button-area .primary-btn1:hover {
   color: #1E1E1E;
@@ -10153,7 +10153,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   justify-content: center;
 }
 .home2-footer-top-section .footer-top-wrapper .footer-top-btn-area .primary-btn1::after {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
 }
 .home2-footer-top-section .footer-top-wrapper .footer-top-btn-area .primary-btn1:hover {
   color: #1E1E1E;
@@ -11327,7 +11327,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 .award-section .award-img {
   width: 100%;
   height: 100%;
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   border-radius: 10px;
   padding: 15px;
@@ -11418,7 +11418,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .award-section .award-list ul li.active {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-color: transparent;
 }
 .award-section .award-list ul li.active .award-history h2,
@@ -11723,7 +11723,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   margin: 0;
   opacity: 0;
   list-style: none;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   padding: 20px 13px;
   border-radius: 0 0 25px 25px;
   transform: scaleY(0);
@@ -11775,7 +11775,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   color: #1E1E1E;
 }
 .team-card .team-content {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border: 1px solid #E2E2E1;
   border-radius: 0 0 10px 10px;
   padding: 25px 30px;
@@ -11841,7 +11841,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   border: 1px solid #E2E2E1;
   border-radius: 50%;
   transition: 0.35s;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
 }
 .team-card.style-2 .team-img .social-area .social-list li a i {
   font-size: 14px;
@@ -12261,7 +12261,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.302);
   border-radius: 50px;
   padding: 7px 22px;
@@ -12292,7 +12292,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   transform: translateX(-50%) rotate(45deg);
   width: 15px;
   height: 15px;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.302);
   border-radius: 0 0 4px 0;
   border-top: unset;
@@ -13249,7 +13249,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   margin-bottom: 0;
 }
 .home4-portfolio-section .porfolio-card-wrapper .portfolioCard {
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -13389,7 +13389,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   background: #E2E2E1;
 }
 .home4-portfolio-section .porfolio-card-wrapper .portfolioCard.five {
-  background: #FFE5E7;
+  background: #FFFFFF;
 }
 .home4-portfolio-section .porfolio-card-wrapper .portfolioCard.six {
   background: #FFE5E7;
@@ -13438,7 +13438,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .home4-portfolio-section.style-2 .porfolio-card-wrapper .portfolioCard {
-  background: #FFE5E7;
+  background: #FFFFFF;
 }
 
 /*=====================================
@@ -13975,7 +13975,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 71px;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
 }
 .inner-banner-card-section.style-2 .counter-wrap::after {
   content: "";
@@ -14460,7 +14460,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   padding: 9px 12px;
   border-radius: 6px;
   text-transform: capitalize;
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   transition: 0.5s;
 }
@@ -14788,7 +14788,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   line-height: 1;
   text-align: center;
   color: #1E1E1E;
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   padding: 7px 15px;
   border-radius: 6px;
@@ -14919,7 +14919,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 .pricing-card .pricing-top .pricing-btn {
   border-radius: 100px;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   font-family: var(--font-inter);
   font-weight: 600;
   font-size: 16px;
@@ -15148,7 +15148,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 }
 .pricing-plan-tab-area .nav-area nav .nav-tabs .nav-link.active {
   color: #1E1E1E;
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: none;
 }
 .pricing-plan-tab-area .nav-area span {
@@ -15227,7 +15227,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   46. Contact Page CSS
 ========================================*/
 .contact-page-top .contact-page-top-wrapper {
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   border-radius: 10px;
   padding: 40px 55px;
@@ -15478,7 +15478,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   right: 0;
   width: 424px;
   padding: 35px 40px;
-  background: #FFE5E7;
+  background: #FFFFFF;
   border-radius: 6px 0;
   opacity: 0;
   transform: translateY(20px);
@@ -15970,7 +15970,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   font-size: 16px;
 }
 .faq-page .nav-links-and-contact-area .contact-area .contact-img-area .contact-title .primary-btn1::after {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
 }
 .faq-page .nav-links-and-contact-area .contact-area .contact-img-area .contact-title .primary-btn1:hover {
   color: #1E1E1E;
@@ -16072,7 +16072,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   }
 }
 .careers-details-page .careers-details-sidebar .sidebar-card {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-radius: 10px;
   border: 1px solid #E2E2E1;
 }
@@ -16354,7 +16354,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   display: flex;
   align-items: center;
   border: 1px solid #E2E2E1;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-radius: 5px;
   position: relative;
   padding: 2px 20px 2px 25px;
@@ -16738,7 +16738,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   line-height: 1;
   text-align: center;
   color: #1E1E1E;
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   padding: 7px 15px;
   border-radius: 6px;
@@ -18069,7 +18069,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
 .careers-thumb-img-wrap .careers-thumb-img .button-area {
   padding: 11px;
   border-radius: 50%;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   position: absolute;
   top: unset;
   bottom: 20px;
@@ -18834,7 +18834,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   top: unset;
   bottom: 0;
   right: 100px;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-radius: 10px 10px 0 0;
   padding: 40px 30px;
 }
@@ -19056,7 +19056,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   line-height: 1;
   text-align: center;
   color: #1E1E1E;
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   padding: 7px 15px;
   border-radius: 6px;
@@ -19545,7 +19545,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   padding-top: 0;
 }
 .features-section .trial-area {
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   border-radius: 20px;
   padding: 20px 25px;
@@ -19590,7 +19590,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   64. Home5 benefits section
 ========================================*/
 .benefits-section .single-benefit-card {
-  background: #FFE5E7;
+  background: #FFFFFF;
   border: 1px solid #E2E2E1;
   border-radius: 10px;
   padding: 35px 40px;
@@ -19633,7 +19633,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   color: #525252;
 }
 .benefits-section .single-benefit-card.two {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
 }
 .benefits-section .single-benefit-card.three {
   background-color: #FFE5E7;
@@ -19936,7 +19936,7 @@ header.home5-header .header-area-wrap .main-menu > ul > li > a {
   right: 16px;
   width: 32px;
   height: 32px;
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -20906,7 +20906,7 @@ body.dark .contact-form-wrap.inner-contact-from .form-inner2 ul li .form-check .
   box-shadow: none;
 }
 body.dark .contact-form-wrap.inner-contact-from .form-inner2 ul li .form-check .form-check-input:checked {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
   border-color: #E2E2E1;
 }
 body.dark .contact-form-wrap.inner-contact-from .form-inner2 ul li .form-check .form-check-input:checked[type=checkbox] {
@@ -21188,5 +21188,5 @@ body.dark .features-section .trial-area .button .primary-btn1 {
   background-color: #E2E2E1;
 }
 body.dark .features-section .trial-area .button .primary-btn1::after {
-  background-color: #FFE5E7;
+  background-color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

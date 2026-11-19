@@ -187,7 +187,7 @@ header .header-area-wrap .main-menu > ul > li .mega-menu.expertise-mega .menu-ro
 
 /* The sketch is white line art on white, so the card stays light in dark mode. */
 body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
-    background: #FFE5E7;
+    background: #FFFFFF;
 }
 
 .home4-about-us-section .about-us-left-area .feature-wrap > img {
@@ -491,7 +491,7 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
 }
 
 .key-features-area .key-features-list li.four {
-    background-color: #FFE5E7;
+    background-color: #FFFFFF;
 }
 
 @media (max-width: 1399px) {
@@ -675,7 +675,7 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
     content: none;
 }
 
-/* A grey border disappears on the pink page, so eyebrow pills get a grey fill instead. */
+/* A grey border is too faint to frame the pill, so eyebrow pills get a grey fill instead. */
 .section-title > span {
     background-color: #E2E2E1;
     border-color: #E2E2E1;
