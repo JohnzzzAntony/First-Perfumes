@@ -4,6 +4,28 @@
 ========================================*/
 
 /* -------------------------------------
+   0. One typeface for the whole site
+   Every family the template referenced now resolves to Manrope.
+---------------------------------------- */
+:root {
+    --font-manrope: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-inter: var(--font-manrope);
+    --font-spaceGrotesk: var(--font-manrope);
+    --font-funnel-display: var(--font-manrope);
+    --font-kanit: var(--font-manrope);
+    --font-suse: var(--font-manrope);
+    --font-dmsans: var(--font-manrope);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: var(--font-manrope);
+}
+
+/* -------------------------------------
    1. One container system for the whole site
    Every section — and the header logo — shares the same
    max width and gutter, so all content lines up on one axis.
@@ -582,4 +604,65 @@ body.dark .home4-about-us-section .about-us-left-area .feature-wrap {
 
 [class*="col-"][class*="-12"] > .faq-wrap .accordion .accordion-item .accordion-body {
     max-width: 75ch;
+}
+
+/* -------------------------------------
+   Section headings on one axis
+   The template laid the eyebrow pill and heading out with
+   space-between, so each heading started wherever its column
+   left it. A fixed pill column puts every heading on the same line.
+---------------------------------------- */
+@media (min-width: 1200px) {
+    /* Only where the heading column is wide enough; narrow columns stack the pill above the heading. */
+    :is(.col-lg-7, .col-lg-8, .col-lg-12) > .section-title.three {
+        display: grid;
+        grid-template-columns: 200px minmax(0, 1fr);
+        column-gap: 32px;
+        row-gap: 0;
+        align-items: start;
+        justify-content: start;
+    }
+    :is(.col-lg-7, .col-lg-8, .col-lg-12) > .section-title.three > span {
+        grid-column: 1;
+        grid-row: 1 / span 3;
+        justify-self: start;
+    }
+    :is(.col-lg-7, .col-lg-8, .col-lg-12) > .section-title.three > :not(span) {
+        grid-column: 2;
+    }
+}
+
+.col-lg-4 > .section-title.three {
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* -------------------------------------
+   Sentence case, as written
+   The template forced capitalize on content; combined with the
+   per-letter heading animation that rendered headings in ALL CAPS
+   and turned body sentences into Title Case. The copy is cased
+   correctly already, so content keeps its written case.
+---------------------------------------- */
+#smooth-content :is(h1, h2, h3, h4, h5, h6, p, li, a, span, div, td, th) {
+    text-transform: none;
+}
+
+/* -------------------------------------
+   Data tables (stage tables, job list)
+   Give the label column room so it never collides with the description.
+---------------------------------------- */
+.table-container table th {
+    white-space: nowrap;
+    padding-right: 24px;
+}
+.table-container table td.position-name {
+    min-width: 220px;
+    padding-right: 24px;
+}
+
+/* Description cells read as body copy, not display text. */
+.table-container table td.job-type {
+    font-size: 16px;
+    line-height: 1.6;
 }
